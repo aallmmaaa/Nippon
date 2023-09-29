@@ -1,0 +1,52 @@
+*{
+
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: #2f2418;
+
+}
+
+header{
+
+    display:flex;
+    
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-size: 1vw;
+
+}
+
+#logo {
+
+    width: 7vw;
+    margin: 3vw;
+
+}
+
+#kurv{
+
+    width: 2.5vw;
+    margin-left: 2vw;
+
+}
+
+#menu{ margin-right: 45vw;}
+
+#menu a { margin-right: 2vw;}
+
+#login_kurv{
+
+    display: flex;
+    align-items: center;
+    margin: 3vw;
+
+}
