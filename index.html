@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nippon</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scipts.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet"> 
 
 </head>
 
@@ -22,17 +23,19 @@
 
         <nav id="menu">
 
-            <a href="#">Måltidskasser</a>
-            <a href="#">Om os</a>
-            <a href="#">FAQ</a>
-            <a href="#">Kogebogen</a>
+            <a href="#måltidskasserne">Måltidskasser</a>
+            <a href="omos.html">Om os</a>
+            <a href="404side.html">FAQ</a>
+            <a href="404side.html">Kogebogen</a>
 
         </nav>
 
         <nav id="login_kurv">
 
-            <a href="#">Log in</a>
-            <a href="#"><img id="kurv" src="billeder/kurv ikon.png" alt="Kurv ikon"></a>
+            <a id="login" href="login.html">Log in</a>
+            
+            <img id="kurv" src="billeder/ikoner/kurv ikon.png" alt="Kurv ikon">
+            <a href="kurv.html"><img id="rødkurv" src="billeder/ikoner/kurv rød.png" alt="Kurv ikon"></a>
 
         </nav>
 
@@ -41,7 +44,110 @@
 
     <main>
 
+        <div class="scroller">
 
+            <div class="scroll-element" id="scroll1">
+
+                <div id="nipponintro">
+
+                    <section class="IEH2" id="tekst1">Japansk <br> madkultur i <br> din hverdag</section>
+
+                    <img id="forside-billede" src="billeder/japanskmand.jpg" alt="Billeder af en Japansk mand, der maler japanske tegn på fliser">
+                
+                    <section class="IEH2" id="tekst2">Gennem <br> Nippons <br> måltidskasser</section>
+
+                </div>
+
+                <a id="linkvidere" href="#måltidskasserne"><h2 class="PFH2">Læs mere om vores <br> måltidskasser <br>v</h2></a>
+
+            </div>
+
+
+            <div class="scroll-element" id="scroll2">
+
+                <ul class="IEH2" id="måltidskasserne">
+
+                    <h1 class="IEH2">MÅLTIDSKASSER</h1>
+
+                    <div id="vælgknap">
+
+                        <div id="vælgperson">
+
+                            <h1 class="IRH1">Vælg antal personer</h1>
+
+                            <button class="filterknap" class="IRH1">1</button>
+                            <button class="filterknap" class="IRH1">2</button>
+                            <button class="filterknap" class="IRH1">3</button>
+                            <button class="filterknap" class="IRH1">4</button>
+                            <button class="filterknap" class="IRH1">5</button>
+
+                        </div>
+
+                        <div id="vælgdage">
+
+                            <h1 class="IRH1">Vælg antal dage</h1>
+
+                            <button class="filterknap" class="IRH1">2</button>
+                            <button class="filterknap" class="IRH1">3</button>
+                            <button class="filterknap" class="IRH1">4</button>
+                            <button class="filterknap" class="IRH1">5</button>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <a class="måltidslink" href="hurtig.html">Den hurtige</a> <a class="PFH2" href="hurtig.html">Læs mere</a> <br>
+                    <a class="måltidslink" href="klassiske.html">Den klassiske</a> <a class="PFH2" href="klassiske.html">Læs mere</a> <br>
+                    <a class="måltidslink" href="økonomiske.html">Den økonomiske</a> <a class="PFH2" href="økonomiske.html">Læs mere</a>  <br>
+                    <a class="måltidslink" href="eksperimenterende.html">Den eksperimenterende</a> <a class="PFH2" href="eksperimenterende.html">Læs mere</a> 
+
+                </ul>
+
+
+                <div class="hover-kort" id="hover-kort">
+
+                    <img class="kortbillede" src="billeder/hurtigbillede.jpg" alt="Madbillede">
+
+                    <div class="ikoner">
+
+                        <div class="tekstikon">
+
+                            <img class="ikon" src="billeder/ikoner/person ikon.png" alt="Antal personer ikon">
+                            <section class="IRH2">2-5 personer</section>
+
+                        </div>
+
+                        <div class="tekstikon">
+
+                            <img class="ikon" src="billeder/ikoner/kalender ikon.png" alt="Antal dage ikon">
+                            <section class="IRH2">2-5 dage</section>
+
+                        </div>
+
+                        <div class="tekstikon">
+
+                            <img class="ikon" src="billeder/ikoner/ur ikon.png" alt="Tid ikon">
+                            <section class="IRH2">30-40 min.</section>
+
+                        </div>
+
+                    </div>
+
+                    <div id="tekstkort">
+                        <p class="IRH1">Den billige måltidskasse er til dig, som har tid og lyst til at udforske det japanske køkken gennem fermentering, nye råvarer og en ny tilgang til hvad et måltid kan være. </p> <br>
+                        <p class="IEH2" id="pris">Fra 379 kr. i alt</p>
+                        <p class="IRH1" id="pris">41 kr. pr. kurv</p>
+                        
+                    </div>
+    
+                </div>
+
+
+            </div>
+
+        </div>
         
     </main>
 
