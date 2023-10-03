@@ -6,11 +6,6 @@
 a   {text-decoration: none;
     color: #2f2418;}
 
-a:link       {color:#2f2418;}
-a:visited    {color:#2f2418;} 
-a:hover      {color:#D51B2F;}  
-a:active     {color:#D51B2F;}
-
 /*Teksttyper*/
 /*Inter Extralight*/
 
@@ -23,6 +18,11 @@ a:active     {color:#D51B2F;}
         font-weight: 200;
         font-size: 2.25vw;
         color: #2f2418;}
+
+/*.IEH3   {font-family: 'Inter', sans-serif;
+        font-weight: 200;
+        font-size: 2vw;
+        color: #2f2418;}*/ /*slettet*/
 
 /*Inter Regular*/
 
@@ -38,7 +38,7 @@ a:active     {color:#D51B2F;}
 
 .IRH3   {font-family: 'Inter', sans-serif;
         font-weight: 400;
-        font-size: 0.5vw;
+        font-size: 0.8vw;
         color: #2f2418;}
 
 /*Playfair Display Italic*/
@@ -67,7 +67,10 @@ header  {display:flex;
 
         font-family: 'Inter', sans-serif;
         text-transform: uppercase;
-        font-size: 1vw;}
+        font-size: 1vw;
+        /*background-color: rgb(181, 89, 89);*/
+        background-color: #f3f1ed;
+}
 
 #logo   {width: 7vw;
         margin: 3vw;}
@@ -75,10 +78,177 @@ header  {display:flex;
 #kurv   {width: 2.5vw;
         margin-left: 2vw;}
 
-#menu   {margin-right: 45vw;}
+#menu   {margin-right: 40vw;}
 
 #menu a {margin-right: 2vw;}
 
 #login_kurv {display: flex;
             align-items: center;
             margin: 3vw;}
+
+/*Styles til måltidskassesiderne + styles til den hurtige*/
+#maaltidskassebaggrund{
+        background-color: #f3f1ed;
+        padding: 0 3vw 0 3vw;
+        height: 80vh;
+}
+
+#hurtigh1{
+        color: #f8aaf8;
+}
+
+.artikelmaaltidskasse{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /*de to "kolonner"*/
+}
+
+.vantalmedbeskrivelse{
+        width: 32vw; /*bredden af den beskrivelsessiden*/
+}
+
+
+.vantal{
+        display: flex; /*så vpersoner og vdage står på samme række*/
+        margin: 3% 0; /*afstand under og over talknapper*/
+}
+
+.vpersoner{
+        width: 50%;
+}
+
+.vdage{
+        width: 50%;
+}
+
+/*Almas styles til filterknapperne*/
+.filterknap     {background-color: #F3F1ED;
+        border: 0.1vw #2f2418;
+        color: #2f2418;
+        border-style: solid;
+        border-radius: 50%;
+        height: 2vw;
+        width: 2vw;
+
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;}
+
+#vælgperson{
+        line-height: 4vh;
+        text-transform: uppercase;
+        margin-top:3%;
+}
+    
+
+#vælgdage   {
+        line-height: 4vh;
+        text-transform: uppercase;
+        margin-top:3%;
+}
+
+button:link       {color:#2f2418;}
+button:visited    {color:#2f2418;}
+button:hover      {color:#D51B2F;}  
+button:active     {color:#D51B2F;}
+
+.maaltidskassebeskrivelse{
+        background-color: #ffffff;
+        padding: 10% 10% 5% 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+.treikoner{
+        display: flex; /*så de også står på række*/
+        justify-content: space-around;
+        margin: 12% 10% 0% 10%;
+}
+
+.ikonmtekst {
+        text-align: center;
+}
+
+.ikonmtekst img{
+        height: 6vh;
+}
+
+/*Ugens menu*/
+.menubaggrund{
+        background-color: #ffffff;
+        width: 57.5vw;
+        height: 49vh; /*højden på billedebaggrund*/
+}
+
+#hurtigmenubaggrund{
+        background-image: url(billeder/ugensmenupladsholderbillede.jpg);
+        background-position: fill;
+}
+
+.ugensmenukort{
+        display: flex; /*så dagkortene står på række*/
+        justify-content: space-between;
+        align-items: end; /*kortene står mere i bunden*/
+        padding: 4%;
+        height: 50vh; /*samme højde som billedet, så dagkortene kan blive skubbet ned i bunden af "billedet"*/
+}
+
+.dagkort{
+        background-color: #f3f1ed;
+        width: 17%;
+        height: 90%;
+        padding: 1%;
+        display: flex; /*så dagkort content kan få space between*/
+        flex-direction: column;
+        justify-content: space-between; /*Så dagkort content starter og slutter på samme række*/
+        text-align: center;
+        
+}
+
+.tidogvis{
+        display: flex; /*så tid og "vis opskrift" står på samme række*/
+        justify-content: space-around;
+        align-items: end;
+}
+
+.ikonmtekstkort img{
+        height: 3.5vh;
+}
+
+.tidogvis a{
+        font-style: italic;
+        line-height: 2vh;
+}
+
+.prisogkurv{
+        display: flex;
+        text-align: right;
+        justify-content: right;
+        margin-top: 2%; /*afstand mellem ugensmenu billede og prisen*/
+}
+
+.tilføjkurv{
+        height: 8.5vh;
+        color: #2f2418;
+        width: 11.5vw;
+        font-size: 1.1vw;
+        border-style: none;
+
+}
+
+.totalogprpris {
+        margin-right: 3.5%;
+}
+
+#tilføjkurvhurtig{
+        background-color: #f8aaf8;
+}
+
+/*Styles til den klassiske måltidskasse*/ /*baggrundsbillede og retterne mangler*/
+#tilføjkurvklassiske{
+        background-color: #2f2418;
+        color: #ffffff; 
+}
+
+/*slut styles til måltidskassesiderne*/
