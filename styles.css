@@ -252,3 +252,194 @@ button:active     {color:#D51B2F;}
 }
 
 /*slut styles til måltidskassesiderne*/
+
+
+
+/*CSS KODE til forside, om os & 404 siden*/
+
+/*Forsidens CSS*/
+
+header  {position: fixed;}
+
+#scroll2    {display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+    
+            background-color: #F3F1ED;}
+
+#nipponintro {display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            margin-top: 10%;
+            align-items: center;
+    
+            flex-direction: row;
+
+            padding-left: 9vw;
+            padding-right: 9vw;}
+
+.scroller   {height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;}
+
+.scroll-element {width: 100vw;
+                height: 100vh;
+                scroll-snap-align: start;
+                overflow-y: hidden;
+            
+                display: flex;}
+
+#scroll1{display: flex;
+        flex-direction: column;}
+
+#linkvidere     {
+                text-align: center;
+                margin-top: 5%;
+                }
+
+#tekst1{text-align: right;}
+
+#forside-billede    {height: 60vh;}
+
+.hover-kort {background-color: #F8AAB8;
+            height: 30vw;
+            width: 20vw;
+    
+            justify-content: center;
+            align-items: center;}
+
+#hover-kort {background-color: #F8AAB8;
+            height: 34vw;
+            width: 20vw;
+
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;}
+
+#måltidskasserne    {list-style-type: none;
+                    line-height: 10vh;}
+
+
+.ikon{height: 4vh;}
+
+.ikoner {display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 1.5vw;}
+
+.tekstikon{width: 5.5vw;}
+
+#pris{text-align: right;}
+
+#tekstkort  {align-content: center;
+            justify-content: center;
+            justify-content: space-around;
+            margin: 2vw;}
+
+.kortbillede{width: 20vw;}
+
+.filterknap     {background-color: #F3F1ED;
+                border: 0.1vw #2f2418;
+                color: #2f2418;
+                border-style: solid;
+                border-radius: 50%; 
+                height: 2vw;
+                width: 2vw;
+        
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;}
+
+#vælgknap   {display: flex;}
+
+#vælgperson{margin-right: 4vw;
+            line-height: 4vh;
+            text-transform: uppercase;}
+
+#vælgdage   {margin-right: 2vw;
+            line-height: 4vh;
+            text-transform: uppercase;}
+
+button:link       {color:#2f2418;}
+button:visited    {color:#2f2418;} 
+button:hover      {color:#D51B2F;}  
+button:active     {color:#D51B2F;}
+
+/*OM OS CSS*/
+#omosside       {display: flex;
+                padding-top: 10%;
+                text-align: center;
+                justify-content: center;
+                justify-content: space-evenly;}
+
+#kontaktkort    {display: flex;
+                width: 21vw;
+                height: 70vh;
+                flex-direction: column;
+                color: #F3F1ED;
+                background-color: #2f2418;
+                padding: 1.5vw;
+                text-align: center;}
+
+#tilhøjre       {text-align: right;} 
+
+#historiekort   {display: flex;
+                width: 21vw;
+                height: 70vh;
+                flex-direction: column;
+                color: #F3F1ED;
+                background-color: #005541;
+                text-align: center;}
+
+#historiekort img       {margin-top: 0;
+                        margin-bottom: 1vh;}
+
+#historiekort p         {text-align: left;
+                        padding: 1.5vw;}
+
+#konceptkort   {display: flex;
+                width: 21vw;
+                height: 70vh;
+                flex-direction: column;
+                color: #2f2418;
+                background-color: #F8AAB8;
+                padding: 1.5vw;
+                text-align: center;}
+
+.konceptknap    {background-color: #2f2418;
+                border: 0.1vw #2f2418;
+                color: #F3F1ED;
+                border-style: solid;
+                border-radius: 50%; 
+                height: 4vw;
+                width: 4vw;
+        
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;}
+
+
+.totrin {display: flex;
+        padding: 0.5vw;}
+
+.trin   {width: 10vw;}
+
+#trinene{align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;}
+
+/*404 CSS*/
+
+#fejlside   {background-image: url(billeder/beklager.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            text-align: center;
+            justify-content: center;}
+
+#beklager   {padding-top: 40vh;}
