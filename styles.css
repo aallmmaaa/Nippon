@@ -61,6 +61,7 @@ a   {text-decoration: none;
 /*Header*/
 
 header  {display:flex;
+        position: fixed;
     
         justify-content: space-between;
         align-items: center;
@@ -258,26 +259,7 @@ button:active     {color:#D51B2F;}
 /*CSS KODE til forside, om os & 404 siden*/
 
 /*Forsidens CSS*/
-
-header  {position: fixed;}
-
-#scroll2    {display: flex;
-            justify-content: center;
-            justify-content: space-around;
-            align-items: center;
-    
-            background-color: #F3F1ED;}
-
-#nipponintro {display: flex;
-            justify-content: center;
-            justify-content: space-around;
-            margin-top: 10%;
-            align-items: center;
-    
-            flex-direction: row;
-
-            padding-left: 9vw;
-            padding-right: 9vw;}
+/*"Første" forside*/
 
 .scroller   {height: 100vh;
             overflow-y: scroll;
@@ -291,83 +273,139 @@ header  {position: fixed;}
             
                 display: flex;}
 
-#scroll1{display: flex;
-        flex-direction: column;}
+#scroll1        {display: flex;
+                flex-direction: column;
+                justify-content: center;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 10%;}
 
-#linkvidere     {
-                text-align: center;
-                margin-top: 5%;
-                }
-
-#tekst1{text-align: right;}
-
-#forside-billede    {height: 60vh;}
-
-.hover-kort {background-color: #F8AAB8;
-            height: 30vw;
-            width: 20vw;
+#scroll2        {display: flex;
+                align-items: center;
+                padding-top: 5%;
+                padding-left: 10%;
+                padding-right: 10%;
+                justify-content: space-between;
     
-            justify-content: center;
-            align-items: center;}
+                background-color: #F3F1ED;}
 
-#hover-kort {background-color: #F8AAB8;
-            height: 34vw;
-            width: 20vw;
+#nipponintro    {display: flex;
+                align-items: center;
+                flex-direction: row;}
 
-            justify-content: center;
-            align-items: center;
-            justify-content: space-evenly;}
+#forside-billede        {width: 20vw;
+                        margin-left: 1.5vw;
+                        margin-right: 1.5vw;}
 
-#måltidskasserne    {list-style-type: none;
-                    line-height: 10vh;}
+#forsidetekst1  {text-align: right;
+                padding-bottom: 30vh;}
 
+#forsidetekst2  {padding-top: 30vh;}
 
-.ikon{height: 4vh;}
+#linkvidere     {text-align: center;}
 
-.ikoner {display: flex;
-        justify-content: space-around;
-        text-align: center;
-        margin-top: 1.5vw;}
+/*"Anden" forsideside*/
 
-.tekstikon{width: 5.5vw;}
+#måltidskasse-oversigt  {list-style-type: none;
+                        line-height: 10vh;}
 
-#pris{text-align: right;}
+#læsmere1       {color: #F8AAB8;}
+#læsmere1:hover {color: #D51B2F;}
 
-#tekstkort  {align-content: center;
-            justify-content: center;
-            justify-content: space-around;
-            margin: 2vw;}
+#læsmere2       {color: #2f2418;}
+#læsmere2:hover {color: #D51B2F;}
 
-.kortbillede{width: 20vw;}
+#læsmere3       {color: #005541;}
+#læsmere3:hover {color: #D51B2F;}
 
-.filterknap     {background-color: #F3F1ED;
-                border: 0.1vw #2f2418;
-                color: #2f2418;
+#læsmere4       {color: #FF9247;}
+#læsmere4:hover {color: #D51B2F;}
+
+/*Vælg antal personer og antal dage*/
+
+#vælgknapper    {display: flex;}
+
+.vælgknap       {margin-right: 4vw;
+                line-height: 4vh;
+                text-transform: uppercase;}
+
+.filterknap     {border: 0.1vw #2f2418;
                 border-style: solid;
                 border-radius: 50%; 
+                background-color: #F3F1ED;
+                color: #2f2418;
                 height: 2vw;
-                width: 2vw;
-        
+                width: 2vw;}
+
+.filterknap:link       {color:#2f2418;}
+.filterknap:visited    {color:#2f2418;} 
+.filterknap:hover      {color:#D51B2F;}  
+.filterknap:active     {color:#D51B2F;}
+
+/*Hoverkort*/
+
+.kortbillede    {width: 20vw;}
+
+.kortikoner     {display: flex;
+                justify-content: space-around;
                 text-align: center;
-                text-decoration: none;
-                display: inline-block;}
+                margin-top: 1.5vw;}
 
-#vælgknap   {display: flex;}
+.kortikon       {height: 4vh;}
 
-#vælgperson{margin-right: 4vw;
-            line-height: 4vh;
-            text-transform: uppercase;}
+.kortikontekst  {width: 5.5vw;}
 
-#vælgdage   {margin-right: 2vw;
-            line-height: 4vh;
-            text-transform: uppercase;}
+.korttekst      {align-content: center;
+                justify-content: center;
+                justify-content: space-around;
+                margin: 2vw;}
 
-button:link       {color:#2f2418;}
-button:visited    {color:#2f2418;} 
-button:hover      {color:#D51B2F;}  
-button:active     {color:#D51B2F;}
+#pris   {text-align: right;}
+
+#hurtig-kort    {background-color: #F8AAB8;
+                height: 34vw;
+                width: 20vw;
+
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+                
+                display: none;}
+
+#klassisk-kort  {background-color: #2f2418;
+                color: #F3F1ED;
+                height: 34vw;
+                width: 20vw;
+
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+                
+                display: none;}
+
+#økonomisk-kort {background-color: #005541;
+                color: #F3F1ED;
+                height: 34vw;
+                width: 20vw;
+
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+                
+                display: none;}
+
+#eksperimenterende-kort {background-color: #FF9247;
+                        height: 34vw;
+                        width: 20vw;
+
+                        justify-content: center;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        
+                        display: none;}
 
 /*OM OS CSS*/
+
 #omosside       {display: flex;
                 padding-top: 10%;
                 text-align: center;
