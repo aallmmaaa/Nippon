@@ -15,7 +15,6 @@ function gem(){
 
 
 
-
 document.getElementById("hurtig").addEventListener("mouseenter", vishurtig) ;
 
 function vishurtig(){
@@ -62,3 +61,172 @@ function gemhover(){
     document.getElementById("økonomisk-kort").style.display = "none" ;
     document.getElementById("klassisk-kort").style.display = "none" ;
     document.getElementById("hurtig-kort").style.display = "none" ;}
+
+
+
+document.getElementById("filterknap1").addEventListener("click", valgt) ;
+
+function valgt() {
+    document.getElementById("filterknap1").style.backgroundColor = "#D51B2F" ;
+    document.getElementById("filterknap1").style.borderColor = "#D51B2F" ;
+    document.getElementById("filterknap1").style.color = "#F3F1ED" ;
+    document.getElementById("filterknap2").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap2").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap2").style.color = "#2f2418" ;
+    document.getElementById("filterknap3").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap3").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap3").style.color = "#2f2418" ;
+    document.getElementById("filterknap4").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap4").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap4").style.color = "#2f2418" ;
+    document.getElementById("filterknap5").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap5").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap5").style.color = "#2f2418" ;}
+
+document.getElementById("filterknap2").addEventListener("click", valgt2) ;
+
+function valgt2() {
+    document.getElementById("filterknap2").style.backgroundColor = "#D51B2F" ;
+    document.getElementById("filterknap2").style.borderColor = "#D51B2F" ;
+    document.getElementById("filterknap2").style.color = "#F3F1ED" ;
+    document.getElementById("filterknap1").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap1").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap1").style.color = "#2f2418" ;
+    document.getElementById("filterknap3").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap3").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap3").style.color = "#2f2418" ;
+    document.getElementById("filterknap4").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap4").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap4").style.color = "#2f2418" ;
+    document.getElementById("filterknap5").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap5").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap5").style.color = "#2f2418" ;}
+
+document.getElementById("filterknap3").addEventListener("click", valgt3) ;
+
+function valgt3() {
+    document.getElementById("filterknap3").style.backgroundColor = "#D51B2F" ;
+    document.getElementById("filterknap3").style.borderColor = "#D51B2F" ;
+    document.getElementById("filterknap3").style.color = "#F3F1ED" ;
+    document.getElementById("filterknap1").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap1").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap1").style.color = "#2f2418" ;
+    document.getElementById("filterknap2").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap2").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap2").style.color = "#2f2418" ;
+    document.getElementById("filterknap4").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap4").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap4").style.color = "#2f2418" ;
+    document.getElementById("filterknap5").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap5").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap5").style.color = "#2f2418" ;}
+
+document.getElementById("filterknap4").addEventListener("click", valgt4) ;
+
+function valgt4() {
+    document.getElementById("filterknap4").style.backgroundColor = "#D51B2F" ;
+    document.getElementById("filterknap4").style.borderColor = "#D51B2F" ;
+    document.getElementById("filterknap4").style.color = "#F3F1ED" ;
+    document.getElementById("filterknap1").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap1").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap1").style.color = "#2f2418" ;
+    document.getElementById("filterknap2").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap2").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap2").style.color = "#2f2418" ;
+    document.getElementById("filterknap3").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap3").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap3").style.color = "#2f2418" ;
+    document.getElementById("filterknap5").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap5").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap5").style.color = "#2f2418" ;}
+
+document.getElementById("filterknap5").addEventListener("click", valgt5) ;
+
+function valgt5() {
+    document.getElementById("filterknap5").style.backgroundColor = "#D51B2F" ;
+    document.getElementById("filterknap5").style.borderColor = "#D51B2F" ;
+    document.getElementById("filterknap5").style.color = "#F3F1ED" ;
+    document.getElementById("filterknap1").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap1").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap1").style.color = "#2f2418" ;
+    document.getElementById("filterknap2").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap2").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap2").style.color = "#2f2418" ;
+    document.getElementById("filterknap3").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap3").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap3").style.color = "#2f2418" ;
+    document.getElementById("filterknap4").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap4").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap4").style.color = "#2f2418" ;}
+
+document.getElementById("filterknap6").addEventListener("click", valgt6) ;
+
+function valgt6() {
+    document.getElementById("filterknap6").style.backgroundColor = "#D51B2F" ;
+    document.getElementById("filterknap6").style.borderColor = "#D51B2F" ;
+    document.getElementById("filterknap6").style.color = "#F3F1ED" ;
+    document.getElementById("filterknap7").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap7").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap7").style.color = "#2f2418" ;
+    document.getElementById("filterknap8").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap8").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap8").style.color = "#2f2418" ;
+    document.getElementById("filterknap9").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap9").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap9").style.color = "#2f2418" ;}
+
+document.getElementById("filterknap7").addEventListener("click", valgt7) ;
+
+function valgt7() {
+    document.getElementById("filterknap7").style.backgroundColor = "#D51B2F" ;
+    document.getElementById("filterknap7").style.borderColor = "#D51B2F" ;
+    document.getElementById("filterknap7").style.color = "#F3F1ED" ;
+    document.getElementById("filterknap6").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap6").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap6").style.color = "#2f2418" ;
+    document.getElementById("filterknap8").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap8").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap8").style.color = "#2f2418" ;
+    document.getElementById("filterknap9").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap9").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap9").style.color = "#2f2418" ;}
+
+document.getElementById("filterknap8").addEventListener("click", valgt8) ;
+
+function valgt8() {
+    document.getElementById("filterknap8").style.backgroundColor = "#D51B2F" ;
+    document.getElementById("filterknap8").style.borderColor = "#D51B2F" ;
+    document.getElementById("filterknap8").style.color = "#F3F1ED" ;
+    document.getElementById("filterknap7").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap7").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap7").style.color = "#2f2418" ;
+    document.getElementById("filterknap6").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap6").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap6").style.color = "#2f2418" ;
+    document.getElementById("filterknap9").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap9").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap9").style.color = "#2f2418" ;}
+
+document.getElementById("filterknap9").addEventListener("click", valgt9) ;
+
+function valgt9() {
+    document.getElementById("filterknap9").style.backgroundColor = "#D51B2F" ;
+    document.getElementById("filterknap9").style.borderColor = "#D51B2F" ;
+    document.getElementById("filterknap9").style.color = "#F3F1ED" ;
+    document.getElementById("filterknap7").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap7").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap7").style.color = "#2f2418" ;
+    document.getElementById("filterknap8").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap8").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap8").style.color = "#2f2418" ;
+    document.getElementById("filterknap6").style.backgroundColor = "#F3F1ED" ;
+    document.getElementById("filterknap6").style.borderColor = "#2f2418" ;
+    document.getElementById("filterknap6").style.color = "#2f2418" ;}
+
+
+document.getElementById("kontakt1").addEventListener("mouseenter", viskontakt) ;
+
+function viskontakt(){
+    document.getElementById("kontakt2").style.display = "block"
+    document.getElementById("kontakt1").style.display = "none"
+}
