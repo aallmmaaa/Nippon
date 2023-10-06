@@ -6,57 +6,49 @@
 a   {text-decoration: none;
     color: #2f2418;}
 
+a:link       {color:#2f2418;}
+a:visited    {color:#2f2418;} 
+a:hover      {color:#D51B2F;}  
+a:active     {color:#D51B2F;}
+
 /*Teksttyper*/
 /*Inter Extralight*/
 
 .IEH1   {font-family: 'Inter', sans-serif;
         font-weight: 200;
-        font-size: 8vw;
-        color: #2f2418;}
+        font-size: 5vw;}
 
 .IEH2   {font-family: 'Inter', sans-serif;
         font-weight: 200;
-        font-size: 2.25vw;
-        color: #2f2418;}
-
-/*.IEH3   {font-family: 'Inter', sans-serif;
-        font-weight: 200;
-        font-size: 2vw;
-        color: #2f2418;}*/ /*slettet*/
+        font-size: 2.25vw;}
 
 /*Inter Regular*/
 
 .IRH1   {font-family: 'Inter', sans-serif;
         font-weight: 400;
-        font-size: 1.1vw;
-        color: #2f2418;}
+        font-size: 1.1vw;}
 
 .IRH2   {font-family: 'Inter', sans-serif;
         font-weight: 400;
-        font-size: 0.8vw;
-        color: #2f2418;}
+        font-size: 0.8vw;}
 
 .IRH3   {font-family: 'Inter', sans-serif;
         font-weight: 400;
-        font-size: 0.8vw;
-        color: #2f2418;}
+        font-size: 0.5vw;}
 
 /*Playfair Display Italic*/
 
 .PFH1   {font-family: 'Playfair Display', serif;
         font-style: italic;
-        font-size: 3vw;
-        color: #2f2418;}
+        font-size: 3vw;}
 
 .PFH2   {font-family: 'Playfair Display', serif;
         font-style: italic;
-        font-size: 1.5vw;
-        color: #2f2418;}
+        font-size: 1.5vw;}
 
 .PFH3   {font-family: 'Playfair Display', serif;
         font-style: italic;
-        font-size: 1vw;
-        color: #2f2418;}
+        font-size: 1vw;}
 
 /*Header*/
 
@@ -68,16 +60,10 @@ header  {display:flex;
 
         font-family: 'Inter', sans-serif;
         text-transform: uppercase;
-        font-size: 1vw;
-        /*background-color: rgb(181, 89, 89);*/
-        background-color: #f3f1ed;
-}
+        font-size: 1vw;}
 
 #logo   {width: 7vw;
         margin: 3vw;}
-
-#kurv   {width: 2.5vw;
-        margin-left: 2vw;}
 
 #menu   {margin-right: 40vw;}
 
@@ -87,176 +73,13 @@ header  {display:flex;
             align-items: center;
             margin: 3vw;}
 
-/*Styles til måltidskassesiderne + styles til den hurtige*/
-#maaltidskassebaggrund{
-        background-color: #f3f1ed;
-        padding: 0 3vw 0 3vw;
-        height: 80vh;
-}
+#login  {margin-right: 2vw;}
 
-#hurtigh1{
-        color: #f8aaf8;
-}
+#kurv   {width: 2.5vw;}
 
-.artikelmaaltidskasse{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; /*de to "kolonner"*/
-}
+#rødkurv    {width: 2.5vw;
+            display: none;}
 
-.vantalmedbeskrivelse{
-        width: 32vw; /*bredden af den beskrivelsessiden*/
-}
-
-
-.vantal{
-        display: flex; /*så vpersoner og vdage står på samme række*/
-        margin: 3% 0; /*afstand under og over talknapper*/
-}
-
-.vpersoner{
-        width: 50%;
-}
-
-.vdage{
-        width: 50%;
-}
-
-/*Almas styles til filterknapperne*/
-.filterknap     {background-color: #F3F1ED;
-        border: 0.1vw #2f2418;
-        color: #2f2418;
-        border-style: solid;
-        border-radius: 50%;
-        height: 2vw;
-        width: 2vw;
-
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;}
-
-#vælgperson{
-        line-height: 4vh;
-        text-transform: uppercase;
-        margin-top:3%;
-}
-    
-
-#vælgdage   {
-        line-height: 4vh;
-        text-transform: uppercase;
-        margin-top:3%;
-}
-
-button:link       {color:#2f2418;}
-button:visited    {color:#2f2418;}
-button:hover      {color:#D51B2F;}  
-button:active     {color:#D51B2F;}
-
-.maaltidskassebeskrivelse{
-        background-color: #ffffff;
-        padding: 10% 10% 5% 10%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-}
-
-.treikoner{
-        display: flex; /*så de også står på række*/
-        justify-content: space-around;
-        margin: 12% 10% 0% 10%;
-}
-
-.ikonmtekst {
-        text-align: center;
-}
-
-.ikonmtekst img{
-        height: 6vh;
-}
-
-/*Ugens menu*/
-.menubaggrund{
-        background-color: #ffffff;
-        width: 57.5vw;
-        height: 49vh; /*højden på billedebaggrund*/
-}
-
-#hurtigmenubaggrund{
-        background-image: url(billeder/ugensmenupladsholderbillede.jpg);
-        background-position: fill;
-}
-
-.ugensmenukort{
-        display: flex; /*så dagkortene står på række*/
-        justify-content: space-between;
-        align-items: end; /*kortene står mere i bunden*/
-        padding: 4%;
-        height: 50vh; /*samme højde som billedet, så dagkortene kan blive skubbet ned i bunden af "billedet"*/
-}
-
-.dagkort{
-        background-color: #f3f1ed;
-        width: 17%;
-        height: 90%;
-        padding: 1%;
-        display: flex; /*så dagkort content kan få space between*/
-        flex-direction: column;
-        justify-content: space-between; /*Så dagkort content starter og slutter på samme række*/
-        text-align: center;
-        
-}
-
-.tidogvis{
-        display: flex; /*så tid og "vis opskrift" står på samme række*/
-        justify-content: space-around;
-        align-items: end;
-}
-
-.ikonmtekstkort img{
-        height: 3.5vh;
-}
-
-.tidogvis a{
-        font-style: italic;
-        line-height: 2vh;
-}
-
-.prisogkurv{
-        display: flex;
-        text-align: right;
-        justify-content: right;
-        margin-top: 2%; /*afstand mellem ugensmenu billede og prisen*/
-}
-
-.tilføjkurv{
-        height: 8.5vh;
-        color: #2f2418;
-        width: 11.5vw;
-        font-size: 1.1vw;
-        border-style: none;
-
-}
-
-.totalogprpris {
-        margin-right: 3.5%;
-}
-
-#tilføjkurvhurtig{
-        background-color: #f8aaf8;
-}
-
-/*Styles til den klassiske måltidskasse*/ /*baggrundsbillede og retterne mangler*/
-#tilføjkurvklassiske{
-        background-color: #2f2418;
-        color: #ffffff; 
-}
-
-/*slut styles til måltidskassesiderne*/
-
-
-
-/*CSS KODE til forside, om os & 404 siden*/
 
 /*Forsidens CSS*/
 /*"Første" forside*/
@@ -329,7 +152,7 @@ button:active     {color:#D51B2F;}
                 line-height: 4vh;
                 text-transform: uppercase;}
 
-.filterknap     {border: 0.1vw #2f2418;
+#filterknap1    {border: 0.1vw #2f2418;
                 border-style: solid;
                 border-radius: 50%; 
                 background-color: #F3F1ED;
@@ -337,10 +160,148 @@ button:active     {color:#D51B2F;}
                 height: 2vw;
                 width: 2vw;}
 
-.filterknap:link       {color:#2f2418;}
-.filterknap:visited    {color:#2f2418;} 
-.filterknap:hover      {color:#D51B2F;}  
-.filterknap:active     {color:#D51B2F;}
+#filterknap1:link        {color:#2f2418;}
+#filterknap1:visited     {color:#2f2418;} 
+#filterknap1:hover       {color:#F3F1ED;
+                        background-color: #2f2418;}  
+#filterknap1:active      {color:#F3F1ED;
+                        background-color: #2f2418;}
+
+#filterknap2    {border: 0.1vw #2f2418;
+                border-style: solid;
+                border-radius: 50%; 
+                background-color: #F3F1ED;
+                color: #2f2418;
+                height: 2vw;
+                width: 2vw;}
+
+#filterknap2:link        {color:#2f2418;}
+#filterknap2:visited     {color:#2f2418;} 
+#filterknap2:hover       {color:#F3F1ED;
+                        background-color: #2f2418;}  
+#filterknap2:active      {color:#F3F1ED;
+                        background-color: #2f2418;}
+
+#filterknap3    {border: 0.1vw #2f2418;
+                border-style: solid;
+                border-radius: 50%; 
+                background-color: #F3F1ED;
+                color: #2f2418;
+                height: 2vw;
+                width: 2vw;}
+
+#filterknap3:link        {color:#2f2418;}
+#filterknap3:visited     {color:#2f2418;} 
+#filterknap3:hover       {color:#F3F1ED;
+                        background-color: #2f2418;}  
+#filterknap3:active      {color:#F3F1ED;
+                        background-color: #2f2418;}
+
+#filterknap4    {border: 0.1vw #2f2418;
+                border-style: solid;
+                border-radius: 50%; 
+                background-color: #F3F1ED;
+                color: #2f2418;
+                height: 2vw;
+                width: 2vw;}
+
+#filterknap4:link        {color:#2f2418;}
+#filterknap4:visited     {color:#2f2418;} 
+#filterknap4:hover       {color:#F3F1ED;
+                        background-color: #2f2418;}  
+#filterknap4:active      {color:#F3F1ED;
+                        background-color: #2f2418;}
+
+#filterknap5    {border: 0.1vw #2f2418;
+                border-style: solid;
+                border-radius: 50%; 
+                background-color: #F3F1ED;
+                color: #2f2418;
+                height: 2vw;
+                width: 2vw;}
+
+#filterknap5:link        {color:#2f2418;}
+#filterknap5:visited     {color:#2f2418;} 
+#filterknap5:hover       {color:#F3F1ED;
+                        background-color: #2f2418;}  
+#filterknap5:active      {color:#F3F1ED;
+                        background-color: #2f2418;}
+
+#filterknap6    {border: 0.1vw #2f2418;
+                border-style: solid;
+                border-radius: 50%; 
+                background-color: #F3F1ED;
+                color: #2f2418;
+                height: 2vw;
+                width: 2vw;}
+
+#filterknap6:link        {color:#2f2418;}
+#filterknap6:visited     {color:#2f2418;} 
+#filterknap6:hover       {color:#F3F1ED;
+                        background-color: #2f2418;}  
+#filterknap6:active      {color:#F3F1ED;
+                        background-color: #2f2418;}
+
+#filterknap7    {border: 0.1vw #2f2418;
+                border-style: solid;
+                border-radius: 50%; 
+                background-color: #F3F1ED;
+                color: #2f2418;
+                height: 2vw;
+                width: 2vw;}
+
+#filterknap7:link        {color:#2f2418;}
+#filterknap7:visited     {color:#2f2418;} 
+#filterknap7:hover       {color:#F3F1ED;
+                        background-color: #2f2418;}  
+#filterknap7:active      {color:#F3F1ED;
+                        background-color: #2f2418;}
+
+#filterknap8    {border: 0.1vw #2f2418;
+                border-style: solid;
+                border-radius: 50%; 
+                background-color: #F3F1ED;
+                color: #2f2418;
+                height: 2vw;
+                width: 2vw;}
+
+#filterknap8:link        {color:#2f2418;}
+#filterknap8:visited     {color:#2f2418;} 
+#filterknap8:hover       {color:#F3F1ED;
+                        background-color: #2f2418;}  
+#filterknap8:active      {color:#F3F1ED;
+                        background-color: #2f2418;}
+
+#filterknap9    {border: 0.1vw #2f2418;
+                border-style: solid;
+                border-radius: 50%; 
+                background-color: #F3F1ED;
+                color: #2f2418;
+                height: 2vw;
+                width: 2vw;}
+
+#filterknap9:link        {color:#2f2418;}
+#filterknap9:visited     {color:#2f2418;} 
+#filterknap9:hover       {color:#F3F1ED;
+                        background-color: #2f2418;}  
+#filterknap9:active      {color:#F3F1ED;
+                        background-color: #2f2418;}
+
+#filterknap2    {border: 0.1vw #2f2418;
+                border-style: solid;
+                border-radius: 50%; 
+                background-color: #F3F1ED;
+                color: #2f2418;
+                height: 2vw;
+                width: 2vw;}
+
+#filterknap2:link        {color:#2f2418;}
+#filterknap2:visited     {color:#2f2418;} 
+#filterknap2:hover       {color:#F3F1ED;
+                        background-color: #2f2418;}  
+#filterknap2:active      {color:#F3F1ED;
+                        background-color: #2f2418;}
+
 
 /*Hoverkort*/
 
@@ -362,8 +323,44 @@ button:active     {color:#D51B2F;}
 
 #pris   {text-align: right;}
 
+.føjtilkurv     {margin-left: 2vw;
+                text-align: center;
+                justify-content: center;
+                width: 8.5vw;
+                height: 3vh;
+                text-transform: uppercase;}
+
+#hurtigkurv             {color: #2f2418;
+                        border: 0.1vw #2f2418;
+                        border-style: solid;}
+
+#hurtigkurv:hover       {background-color:#2f2418;
+                        color: #F8AAB8;}  
+
+#klassiskkurv           {color: #F3F1ED;
+                        border: 0.1vw #F3F1ED;
+                        border-style: solid;}
+
+#klassiskkurv:hover     {background-color:#F3F1ED;
+                        color: #2f2418;}  
+
+#økonomiskkurv          {color: #F3F1ED;
+                        border: 0.1vw #F3F1ED;
+                        border-style: solid;}
+
+#økonomiskkurv:hover    {background-color:#F3F1ED;
+                        color: #005541;}  
+
+#eksperimenterendekurv  {color: #2f2418;
+                        border: 0.1vw #2f2418;
+                        border-style: solid;}
+
+#eksperimenterendekurv:hover    {background-color:#2f2418;
+                                color: #FF9247;}  
+
+
 #hurtig-kort    {background-color: #F8AAB8;
-                height: 34vw;
+                height: 37vw;
                 width: 20vw;
 
                 justify-content: center;
@@ -374,7 +371,7 @@ button:active     {color:#D51B2F;}
 
 #klassisk-kort  {background-color: #2f2418;
                 color: #F3F1ED;
-                height: 34vw;
+                height: 37vw;
                 width: 20vw;
 
                 justify-content: center;
@@ -385,7 +382,7 @@ button:active     {color:#D51B2F;}
 
 #økonomisk-kort {background-color: #005541;
                 color: #F3F1ED;
-                height: 34vw;
+                height: 37vw;
                 width: 20vw;
 
                 justify-content: center;
@@ -395,7 +392,7 @@ button:active     {color:#D51B2F;}
                 display: none;}
 
 #eksperimenterende-kort {background-color: #FF9247;
-                        height: 34vw;
+                        height: 37vw;
                         width: 20vw;
 
                         justify-content: center;
@@ -412,24 +409,41 @@ button:active     {color:#D51B2F;}
                 justify-content: center;
                 justify-content: space-evenly;}
 
-#kontaktkort    {display: flex;
+.kontaktkort    {display: flex;
                 width: 21vw;
                 height: 70vh;
                 flex-direction: column;
                 color: #F3F1ED;
                 background-color: #2f2418;
                 padding: 1.5vw;
-                text-align: center;}
+                text-align: center;
+                justify-content: space-evenly;}
+
+#kontakt1       {background-color: white;
+                color: #F3F1ED;}
+
+#omostitel       {color: #2f2418;}
+
+#kontakt2       {display: none;}
+
+#socialeikoner  {display: flex;
+                justify-content: space-evenly;}
 
 #tilhøjre       {text-align: right;} 
 
-#historiekort   {display: flex;
+.historiekort   {display: flex;
                 width: 21vw;
                 height: 70vh;
                 flex-direction: column;
                 color: #F3F1ED;
                 background-color: #005541;
-                text-align: center;}
+                text-align: center;
+                justify-content: space-evenly;}
+
+#historie1      {background-color: white;
+                color: #F3F1ED;}
+
+#historie2      {display: none;}
 
 #historiekort img       {margin-top: 0;
                         margin-bottom: 1vh;}
@@ -437,14 +451,29 @@ button:active     {color:#D51B2F;}
 #historiekort p         {text-align: left;
                         padding: 1.5vw;}
 
-#konceptkort   {display: flex;
+.konceptkort   {display: flex;
                 width: 21vw;
                 height: 70vh;
                 flex-direction: column;
                 color: #2f2418;
                 background-color: #F8AAB8;
                 padding: 1.5vw;
-                text-align: center;}
+                text-align: center;
+                justify-content: space-evenly;}
+
+#koncept1      {background-color: white;
+                color: #F3F1ED;}
+
+#koncept2      {display: none;}
+
+.konceptikoner  {display: flex;
+                justify-content: space-around;
+                text-align: center;
+                margin-top: 1.5vw;}
+
+.konceptikon    {height: 5.5vh;}
+
+.konceptikontekst       {width: 5.5vw;}
 
 .konceptknap    {background-color: #2f2418;
                 border: 0.1vw #2f2418;
@@ -455,8 +484,7 @@ button:active     {color:#D51B2F;}
                 width: 4vw;
         
                 text-align: center;
-                text-decoration: none;
-                display: inline-block;}
+                text-decoration: none;}
 
 
 .totrin {display: flex;
@@ -470,14 +498,399 @@ button:active     {color:#D51B2F;}
 
 /*404 CSS*/
 
-#fejlside   {background-image: url(billeder/beklager.jpg);
-            width: 100vw;
-            height: 100vh;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+#fejlside       {background-image: url(billeder/beklager.jpg);
+                width: 100vw;
+                height: 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;}
 
-            text-align: center;
-            justify-content: center;}
+#beklager       {padding-top: 15%;
+                color: #FF9247;
+                animation-name: farve;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+                text-align: center;}
 
-#beklager   {padding-top: 40vh;}
+
+@keyframes farve        {25% {color:#FF9247;}
+                        50% {color:#005541;}
+                        75% {color:#F8AAB8;}}
+
+
+/*KURV CSS*/
+#kurvside   {padding-top: 17vh;}
+
+#baggrundkurv   {width: 60vw;
+                height: 30vw;
+                background-color:#FF9247;
+                float: right;
+                margin-right: 15vw;}
+    
+    
+#koebknap       {margin-top: 35vw;
+                margin-left: 45vw;}
+    
+.IEH2_orange    {font-family: 'Inter', sans-serif;
+                font-weight: 200;
+                font-size: 2.25vw;
+                color:#FF9247;
+                margin-left: 2vw;
+                margin-top: 2vw;}
+    
+#tekst_venstre  {margin-left: 3vw;
+                margin-top: 2;}
+    
+    
+.ikoner{width: 2vw;}
+    
+#treikoner      {display: flex;
+                margin-top: 2vw;
+                justify-content: space-around;
+                margin-right: 1vw;}
+    
+    
+#krydsknap      {float: right;
+                background-color: #2f2418;
+                color: #F3F1ED;
+                font-size: 1vw;
+                border: none;
+                border-radius: 50%;
+                width: 3vw;
+                padding: 1vw;
+                position: relative;
+                bottom: 6vw;
+                left: 1.5vw;}
+    
+#tilfoejknap{float: right;
+                background-color: #2f2418;
+                color: #F3F1ED;
+                font-size: 3.5vw;
+                border: none;
+                border-radius: 50%;
+                width: 5vw;
+                position: relative;
+                margin-top: 15vw;
+                right: 1vw;
+                bottom: 14vw;}
+    
+#tilfoejmaeltidskasse       {float: right;
+                                position: relative;
+                                left: 10vw;
+                                bottom: 9vw;}
+    
+#tekstogpris        {display: flex;
+                        justify-content: space-between;
+                        margin-top: 14vw;
+                        padding: 1vw;}
+    
+#madtallerken       {width: 17vw;
+                        float: right;
+                        margin-right: 5vw;
+                        margin-top: 2vw;}
+    
+.plusogminusknap    {border: none;
+                        border-radius: 50%;
+                        color: #F3F1ED;
+                        background-color: #2f2418;}
+    
+.ikonmtekst{text-align: center;}
+
+
+/*Opskrift side*/
+
+.konceptikon2    {height: 8vh;}
+
+.konceptikontekst2      {width: 10vw;
+                        margin-right: 5vw;
+                        margin-left: 5vw;}
+
+
+#opskriftside   {padding-top: 15vh;}
+
+#to_kort        {display: flex;}
+
+#pladsholder    {width: 30vw;
+                height: 28.25vw;
+                background-color:#F3F1ED;
+                margin-top: 4vw;
+                margin-left: 6vw;}
+
+#billedpladsholder      {width: 50vw;
+                        height: 28.25vw;
+                        background-color:#F3F1ED;
+                        margin-top: 4vw;
+                        margin-left: 6vw;}
+
+
+#IEH2_opskriftside      {font-family: 'Inter', sans-serif;
+                        font-weight: 200;
+                        font-size: 3vw;
+                        color: #2f2418;
+                        text-align: center;
+                        margin-left: 13vw;}
+
+#IEH2center     {font-family: 'Inter', sans-serif;
+                font-weight: 200;
+                text-transform: uppercase;
+                font-size: 2.25vw;
+                color: #2f2418;
+                text-align: center;
+                margin-top: 4vw;}
+
+
+#overskriftogknap       {display: flex;
+                        margin-top: 2vw;
+                        margin-left: 3vw;}
+
+#tilbageknap    {margin-left: 3.5vw;}
+
+
+#ingrediens_liste       {font-family: 'Inter', sans-serif;
+                        font-weight: 400;
+                        font-size: 1.1vw;
+                        color: #2f2418;
+                        text-align: center;}
+
+.liste  {display: inline-block;
+        text-align: left;}
+
+
+#baggrundsfirkant       {display: flex;
+                        flex-direction: column;
+                        background-color:#F3F1ED;
+                        width: 100vw;
+                        height: 100vh;
+                        margin-top: 8vw;
+                        align-items: center;}
+
+#fremgangsmaede_firkant {background-color: white;
+                        width: 75%;
+                        margin-top: 6vw;
+                        padding: 2vw;}
+
+#vaerdiikoner   {width: 100%;
+                height: 50vh;
+                padding: 2vw;}
+
+#ikonerhoejre   {display: flex;
+                margin-left: 10vw;
+                padding: 2vw 0;
+                text-align: center;
+                width: 10vw;
+                justify-content: space-between;}
+
+
+.filterknap     {background-color: #F3F1ED;
+                border: 0.1vw #2f2418;
+                color: #2f2418;
+                border-style: solid;
+                border-radius: 50%;
+                height: 2vw;
+                width: 2vw;
+                text-align: center;
+                text-decoration: none;}
+
+#talogtekst     {display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                margin-top: 2vw;
+                margin-bottom: 2vw;}
+
+#madtallerkenbillede    {z-index: 1;
+                        width: 20vw;
+                        position: relative;
+                        left: 24vw;
+                        bottom: 30vw;}
+
+/*Styles til måltidskassesiderne + styles til den hurtige*/
+#maaltidskassebaggrund  {background-color: #f3f1ed;
+                        padding: 0 3vw 0 3vw;
+                        height: 100vh; /*Så baggrunden kan ses bag headeren*/
+                        padding-top: 15vh; /*så content fylder ned under headeren*/}
+
+#hurtigh1       {color: #F8AAB8;
+
+                text-align: right;}
+
+#ugensmenu      {text-align: right;}
+
+.artikelmaaltidskasse   {display: flex;
+                        flex-direction: row;
+                        justify-content: space-between; /*de to "kolonner"*/}
+
+#venstre   {width: 32vw; /*bredden af den beskrivelsessiden*/}
+
+
+
+/*Almas styles til filterknapperne*/
+.filterknap     {background-color: #F3F1ED;
+                border: 0.1vw #2f2418;
+                color: #2f2418;
+                border-style: solid;
+                border-radius: 50%;
+                height: 2vw;
+                width: 2vw;
+
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;}
+
+#vælgperson     {line-height: 4vh;
+                text-transform: uppercase;
+                margin-top:3%;}
+   
+
+#vælgdage       {line-height: 4vh;
+                text-transform: uppercase;
+                margin-top:3%;}
+
+button:link       {color:#2f2418;}
+button:visited    {color:#2f2418;}
+button:hover      {color:#D51B2F;}  
+button:active     {color:#D51B2F;}
+
+.maaltidskassebeskrivelse       {background-color: #ffffff;
+                                padding: 10% 10% 5% 10%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;}
+
+.treikoner      {display: flex; /*så de også står på række*/
+                justify-content: space-around;
+                margin: 12% 10% 0% 10%;}
+
+.ikonmtekst     {text-align: center;}
+
+.ikonmtekst img {height: 6vh;}
+
+/*Ugens menu*/
+
+.menubaggrund   {background-color: #ffffff;
+                width: 57.5vw;
+                height: 45vh; /*højden på billedebaggrund*/}
+
+#hurtigmenubaggrund     {background-image: url(billeder/hurtigbaggrund.jpg);
+                        background-size: fill;
+                        
+                        background-position: right 0vh;}
+
+.ugensmenukort  {display: flex; /*så dagkortene står på række*/
+                justify-content: space-between;
+                align-items: end; /*kortene står mere i bunden*/
+                padding: 4%;
+                height: 45vh; /*samme højde som billedet, så dagkortene kan blive skubbet ned i bunden af "billedet"*/}
+
+.dagkort        {background-color: #f3f1ed;
+                width: 17%;
+                height: 90%;
+                padding: 1%;
+                display: flex; /*så dagkort content kan få space between*/
+                flex-direction: column;
+                justify-content: space-between; /*Så dagkort content starter og slutter på samme række*/
+                text-align: center;}
+
+.tidogvis       {display: flex; /*så tid og "vis opskrift" står på samme række*/
+                justify-content: space-around;
+                align-items: end;}
+
+.ikonmtekstkort img     {height: 3.5vh;}
+
+.tidogvis a     {font-style: italic;
+                line-height: 2vh;}
+
+.prisogkurv     {display: flex;
+                text-align: right;
+                justify-content: right;
+                margin-top: 2%; /*afstand mellem ugensmenu billede og prisen*/}
+
+.tilføjkurv     {height: 8.5vh;
+                color: #2f2418;
+                width: 11.5vw;
+                font-size: 1.1vw;
+                border-style: none;}
+
+.totalogprpris  {margin-right: 3.5%;}
+
+#tilføjkurvhurtig       {background-color: #F8AAB8;
+                        text-transform: uppercase;}
+
+#tilføjkurvhurtig:link          {color:#2f2418;}
+#tilføjkurvhurtig:visited       {color:#2f2418;} 
+#tilføjkurvhurtig:hover         {color:#F8AAB8;
+                                background-color: #2f2418;}  
+#tilføjkurvhurtig:active        {color:#F8AAB8;
+                                background-color: #2f2418;}
+
+
+/*Styles til den klassiske måltidskasse*/ /*baggrundsbillede og retterne mangler*/
+#tilføjkurvklassiske    {background-color: #2f2418;
+                        color: #ffffff;}
+
+.retpladsholder {width: 6vw;}
+
+
+/*Styles til login siden*/
+
+.formbaggrund{
+        background-color: #f3f1ed;
+        display: flex;
+        height: 100vh; /*så baggrunden kommer op bag headeren*/
+        /*padding-top: 20vh; så content bliver ned under headeren*/
+}
+
+#loginopretbruger{
+        width: 30vw; /*bredden for opret og login tekst i venstre side*/
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10%;
+        margin-left: 3vw;
+}
+
+#opretbruger{
+        opacity: 0.3;
+}
+
+.formhøjreside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end; /*Styre "formstyles" til højre*/
+        width: 51vw; /*Styre at formlinjerne + login knappen stopper ud fra login i headeren (på nikos computer:))*/
+        height: 100%;
+        padding: 18vh 0 10vh 15vw;
+       
+}
+
+.formstyles {
+        width: 100%;
+        /*background-color: yellowgreen;*/
+
+}
+
+#formlogin{
+        padding-top: 14%; /*Padding er anderledes for login, fordi der står mindre i form*/
+}
+
+.formstyles input{
+        border: none;
+        border-bottom: 2px solid #2f2418;
+        background-color: #f3f1ed;
+        line-height: 24pt;
+        font-family: 'Inter', sans-serif; /*Samme styles fra .IRH1*/
+        font-weight: 400;
+        font-size: 1.1vw;
+        color: #2f2418;
+        margin-bottom: 4%;
+        width: 100%;
+}
+
+.formstyles input:focus{
+        outline: none;
+}
+
+.formstyles .PFH3{
+        margin-top: 5%;
+}
