@@ -32,62 +32,85 @@
 
         <nav id="login_kurv">
 
-            <a id="login" href="#">Log in</a>
-            <a href="kurv.html"><img id="kurv" src="billeder/kurv ikon.png" alt="Kurv ikon"></a>
+            <a id="login" href="login.html">Log in</a>
+            
+            <img id="kurv" src="billeder/ikoner/kurv ikon.png" alt="Kurv ikon">
+            <a href="kurv.html"><img id="rødkurv" src="billeder/ikoner/kurv rød.png" alt="Kurv ikon"></a>
 
         </nav>
 
     </header>
 
 
-    <main>
+    <main id="opskriftside">
 
 
         <div id="overskriftogknap">
 
             <div id="tilbageknap">
-                <h1 class="PFH1">< Tilbage</h1>
+
+                <a href="javascript:window.history.back();"><h1 class="PFH1">< Tilbage</h1></a>
+
             </div>
 
             <div>
+
                 <h2 id="IEH2_opskriftside">Opskrift på grød med <br> yuzucreme og lakridspulver </h2>
+            
             </div>
 
             <div id="ikonerhoejre">
+
                 <div>
-                    <img class="ikoner" src="billeder/person ikon.png" alt="Person ikon">
+
+                    <img class="ikoner" src="billeder/ikoner/person ikon.png" alt="Person ikon">
                     <h2 class="IRH2">2 personer</h2>
+
                 </div>
                
                 <div>
-                    <img class="ikoner" src="billeder/ur ikon.png" alt="Ur ikon">
+
+                    <img class="ikoner" src="billeder/ikoner/ur ikon.png" alt="Ur ikon">
                     <h2 class="IRH2">15-40 min</h2>
+
                 </div>
             </div>
 
         </div>
 
         <div id="to_kort">
+
             <div id="pladsholder">
+
                 <div>
-                    <h3 id="IEH2center">Ingredienser</h3>
-                    <br>
-                    <br>
-                        <div id="ingrediens_liste">
-                            <ul class="liste">
-                                <li>1 1/2 tsk. Lakridsrodspulver</li>
-                                <li>2 dl ris</li>
-                                <li>1 dl mælk</li>
-                                <li>4 dl yuzu saft</li>
-                                <li>1 dl mælk</li>
-                                <li>4 dl kondeseret mælk</li>
-                                <li>3 dl havregryn (grovvalset)</li>
-                            </ul>
-                        </div>
+
+                    <h3 id="IEH2center">Ingredienser</h3><br><br>
+                    
+                    <div id="ingrediens_liste">
+
+                        <ul class="liste">
+                                
+                            <li>1 1/2 tsk. Lakridsrodspulver</li>
+                            <li>2 dl ris</li>
+                            <li>1 dl mælk</li>
+                            <li>4 dl yuzu saft</li>
+                            <li>1 dl mælk</li>
+                            <li>4 dl kondeseret mælk</li>
+                            <li>3 dl havregryn (grovvalset)</li>
+
+                        </ul>
+
+                    </div>
+
                 </div>
+
             </div>
         
-            <img id="billedpladsholder" src="billeder/Videoen.png" alt="Video af opskrift">
+            <iframe id="billedpladsholder" class="video-article" 
+            src="https://www.youtube.com/embed/qM0maABw03U?"
+            frameboarder="0"
+            allow="accelerometer;autoplay;gyroscrope"
+            allowfullscreen></iframe>
             
 
         </div>
@@ -118,16 +141,46 @@
 
                     
             </div>
-
-            
-                   
+             
           
         </div>
+<br><br><br><br><br><br><br><br>
+        <div class="konceptikoner">
 
-        <img id="madtallerkenbillede" src="billeder/Madtallerken.png" alt="">
+            <div class="konceptikontekst2">
+
+                <img class="konceptikon2" src="billeder/ikoner/øko.png" alt="Ikon for 100% økologiske varer">
+                <h2 class="IRH2">100% økologiske varer - fordi vi mener, det er bedre for både dig og miljøet.</h2>
+
+            </div>
+
+            <div class="konceptikontekst2">
+
+                <img class="konceptikon2" src="billeder/ikoner/sol.png" alt="Ikon for varer i sæson">
+                <h2 id="koncepttekst" class="IRH2">Varer i sæson - bedst for klima, miljø og smag. </h2>
+
+            </div>
+
+            <div class="konceptikontekst2">
+
+                <img class="konceptikon2" src="billeder/ikoner/co2.png" alt="Ikon for mindre CO₂ i alle led">
+                <h2 id="koncepttekst" class="IRH2">Mindre CO₂ i alle led - så du kan vælge løsninger med lavest muligt aftryk.</h2>
+            
+            </div>
+            
+            <div class="konceptikontekst2">
+
+                <img class="konceptikon2" src="billeder/ikoner/fly.png" alt="Ikon for No Fly-Policy varer">
+                <h2 id="koncepttekst" class="IRH2">No Fly-Policy - Intet i vores sortiment er blevet fragtet med fly.</h2>
+            
+            </div>        
+        
+        </div>
+
+        <img id="madtallerkenbillede" src="billeder/andendagtallerken.png" alt="Billede af opskriftens færdige ret">
         <!--<img id="vaerdiikoner" src="billeder/vaerdier.jpg" alt="Nippons værdier">-->
 
-    
+
     </main>
 
 </body>
