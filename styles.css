@@ -3,6 +3,11 @@
 *   {margin: 0;
     box-sizing: border-box;}
 
+#on-site        {color: #D51B2F;}
+
+.ikke:hover {cursor: none;}
+#ikke:hover {cursor: none;}
+
 a   {text-decoration: none;
     color: #2f2418;}
 
@@ -73,12 +78,19 @@ header  {display:flex;
             align-items: center;
             margin: 3vw;}
 
-#login  {margin-right: 2vw;}
+.login  {margin-right: 2vw;}
 
 #kurv   {width: 2.5vw;}
 
 #rødkurv    {width: 2.5vw;
             display: none;}
+
+#profil         {width: 2.5vw;
+                margin-right: 2vw;}
+
+#rødprofil      {width: 2.5vw;
+                display: none;
+                margin-right: 2vw;}
 
 
 /*Forsidens CSS*/
@@ -116,7 +128,7 @@ header  {display:flex;
                 align-items: center;
                 flex-direction: row;}
 
-#forside-billede        {width: 20vw;
+.forside-billede        {width: 20vw;
                         margin-left: 1.5vw;
                         margin-right: 1.5vw;}
 
@@ -305,6 +317,12 @@ header  {display:flex;
 
 /*Hoverkort*/
 
+#hoverlink1     {color: #2f2418;
+                display: hidden;}
+
+#hoverlink2     {color: #F3F1ED;
+                display: hidden;}
+
 .kortbillede    {width: 20vw;}
 
 .kortikoner     {display: flex;
@@ -362,10 +380,8 @@ header  {display:flex;
 #hurtig-kort    {background-color: #F8AAB8;
                 height: 37vw;
                 width: 20vw;
-
                 justify-content: center;
                 align-items: center;
-                justify-content: space-evenly;
                 
                 display: none;}
 
@@ -373,10 +389,8 @@ header  {display:flex;
                 color: #F3F1ED;
                 height: 37vw;
                 width: 20vw;
-
                 justify-content: center;
                 align-items: center;
-                justify-content: space-evenly;
                 
                 display: none;}
 
@@ -384,10 +398,8 @@ header  {display:flex;
                 color: #F3F1ED;
                 height: 37vw;
                 width: 20vw;
-
                 justify-content: center;
                 align-items: center;
-                justify-content: space-evenly;
                 
                 display: none;}
 
@@ -397,17 +409,18 @@ header  {display:flex;
 
                         justify-content: center;
                         align-items: center;
-                        justify-content: space-evenly;
                         
                         display: none;}
 
 /*OM OS CSS*/
 
 #omosside       {display: flex;
+                height: 100vh;
                 padding-top: 10%;
                 text-align: center;
                 justify-content: center;
-                justify-content: space-evenly;}
+                justify-content: space-evenly;
+                background-color: #F3F1ED;}
 
 .kontaktkort    {display: flex;
                 width: 21vw;
@@ -419,7 +432,7 @@ header  {display:flex;
                 text-align: center;
                 justify-content: space-evenly;}
 
-#kontakt1       {background-color: white;
+#kontakt1       {background-color: #F3F1ED;
                 color: #F3F1ED;}
 
 #omostitel       {color: #2f2418;}
@@ -427,6 +440,10 @@ header  {display:flex;
 #kontakt2       {display: none;}
 
 #socialeikoner  {display: flex;
+                justify-content: space-evenly;
+                visibility: hidden;}
+
+#socialeikoner2  {display: flex;
                 justify-content: space-evenly;}
 
 #tilhøjre       {text-align: right;} 
@@ -440,7 +457,10 @@ header  {display:flex;
                 text-align: center;
                 justify-content: space-evenly;}
 
-#historie1      {background-color: white;
+#historietekst  {text-align: left;
+                padding: 2vw}
+
+#historie1      {background-color: #F3F1ED;
                 color: #F3F1ED;}
 
 #historie2      {display: none;}
@@ -448,8 +468,7 @@ header  {display:flex;
 #historiekort img       {margin-top: 0;
                         margin-bottom: 1vh;}
 
-#historiekort p         {text-align: left;
-                        padding: 1.5vw;}
+#historieimg1   {visibility: hidden;}
 
 .konceptkort   {display: flex;
                 width: 21vw;
@@ -461,7 +480,7 @@ header  {display:flex;
                 text-align: center;
                 justify-content: space-evenly;}
 
-#koncept1      {background-color: white;
+#koncept1      {background-color: #F3F1ED;
                 color: #F3F1ED;}
 
 #koncept2      {display: none;}
@@ -470,6 +489,8 @@ header  {display:flex;
                 justify-content: space-around;
                 text-align: center;
                 margin-top: 1.5vw;}
+
+#konceptikoner1 {visibility: hidden;}
 
 .konceptikon    {height: 5.5vh;}
 
@@ -486,6 +507,7 @@ header  {display:flex;
                 text-align: center;
                 text-decoration: none;}
 
+#konceptknap1   {visibility: hidden;}
 
 .totrin {display: flex;
         padding: 0.5vw;}
@@ -505,96 +527,82 @@ header  {display:flex;
                 background-repeat: no-repeat;
                 background-size: cover;}
 
-#beklager       {padding-top: 15%;
-                color: #FF9247;
+#beklager       {padding-top: 20%;
+                color: #F3F1ED;
                 animation-name: farve;
                 animation-duration: 3s;
                 animation-iteration-count: infinite;
                 text-align: center;}
 
 
-@keyframes farve        {25% {color:#FF9247;}
-                        50% {color:#005541;}
-                        75% {color:#F8AAB8;}}
-
-
 /*KURV CSS*/
-#kurvside   {padding-top: 17vh;}
 
-#baggrundkurv   {width: 60vw;
-                height: 30vw;
-                background-color:#FF9247;
-                float: right;
-                margin-right: 15vw;}
-    
-    
-#koebknap       {margin-top: 35vw;
-                margin-left: 45vw;}
-    
-.IEH2_orange    {font-family: 'Inter', sans-serif;
-                font-weight: 200;
-                font-size: 2.25vw;
-                color:#FF9247;
-                margin-left: 2vw;
-                margin-top: 2vw;}
-    
-#tekst_venstre  {margin-left: 3vw;
-                margin-top: 2;}
-    
-    
-.ikoner{width: 2vw;}
-    
-#treikoner      {display: flex;
-                margin-top: 2vw;
+#kurvside       {display: flex;
+                flex-direction: column;
+                justify-content: center;
+                justify-content: space-between;
+                background-color: #F3F1ED;}
+
+#kurvinfo       {padding-top: 20vh;
+                display: flex;
+                justify-content: space-around;}
+
+#kryds  {position: absolute;
+        color: #F3F1ED;
+        top: 22vh;
+        right: 19.5vw;}
+
+#kryds:hover     {color: #D51B2F;}
+
+#kurvoverskrift {line-height: 8vh;}
+
+#baggrundkurv   {display: flex;
+                width: 50vw;
+                height: 60vh;
+                background-color:#ffffff;}
+
+#baggrundkurv-indhold   {padding: 2vw;}
+
+#kurvtekst      {justify-content: center;
+                justify-content: space-evenly;}
+
+#valgteoverskrift {color:#F8AAB8;}
+
+.kurvikoner     {display: flex;
                 justify-content: space-around;
-                margin-right: 1vw;}
+                width: 25vw;
+                text-align: center;}
+
+.kurvikon       {height: 4vh;}
+
+.kurvikontekst  {display: flex;
+                justify-content: center;}
+
+.plusogminusknap        {border: none;
+                        border-radius: 50%;
+                        color: #F3F1ED;
+                        background-color: #2f2418;
+                        width: 1.5vw;
+                        height: 1.5vw;}
+
+#tekstogpris    {display: flex;
+                justify-content: space-between;
+                bottom: 2vh;}
+
+#kurvbillede    {height: 60vh;
+                width: 25vw;}
+
+#tilfoejmaeltidskasse   {margin-top: 45vh;}
     
-    
-#krydsknap      {float: right;
-                background-color: #2f2418;
-                color: #F3F1ED;
-                font-size: 1vw;
-                border: none;
-                border-radius: 50%;
-                width: 3vw;
-                padding: 1vw;
-                position: relative;
-                bottom: 6vw;
-                left: 1.5vw;}
-    
-#tilfoejknap{float: right;
-                background-color: #2f2418;
+#tilfoejknap    {background-color: #2f2418;
                 color: #F3F1ED;
                 font-size: 3.5vw;
                 border: none;
                 border-radius: 50%;
-                width: 5vw;
-                position: relative;
-                margin-top: 15vw;
-                right: 1vw;
-                bottom: 14vw;}
-    
-#tilfoejmaeltidskasse       {float: right;
-                                position: relative;
-                                left: 10vw;
-                                bottom: 9vw;}
-    
-#tekstogpris        {display: flex;
-                        justify-content: space-between;
-                        margin-top: 14vw;
-                        padding: 1vw;}
-    
-#madtallerken       {width: 17vw;
-                        float: right;
-                        margin-right: 5vw;
-                        margin-top: 2vw;}
-    
-.plusogminusknap    {border: none;
-                        border-radius: 50%;
-                        color: #F3F1ED;
-                        background-color: #2f2418;}
-    
-.ikonmtekst{text-align: center;}
+                width: 5vw;}
+
+#købnu  {text-align: center;
+        margin: 6vh;}
 
 
 /*Opskrift side*/
@@ -608,19 +616,18 @@ header  {display:flex;
 
 #opskriftside   {padding-top: 15vh;}
 
-#to_kort        {display: flex;}
+#to_kort        {display: flex;
+                justify-content: center;
+                justify-content: space-evenly;
+                margin-top: 4vw;}
 
 #pladsholder    {width: 30vw;
                 height: 28.25vw;
-                background-color:#F3F1ED;
-                margin-top: 4vw;
-                margin-left: 6vw;}
+                background-color:#F3F1ED;}
 
 #billedpladsholder      {width: 50vw;
                         height: 28.25vw;
-                        background-color:#F3F1ED;
-                        margin-top: 4vw;
-                        margin-left: 6vw;}
+                        background-color:#F3F1ED;}
 
 
 #IEH2_opskriftside      {font-family: 'Inter', sans-serif;
@@ -641,9 +648,10 @@ header  {display:flex;
 
 #overskriftogknap       {display: flex;
                         margin-top: 2vw;
-                        margin-left: 3vw;}
+                        justify-content: center;
+                        justify-content: space-evenly;}
 
-#tilbageknap    {margin-left: 3.5vw;}
+#tilbageknap    {margin-left: 7vw;}
 
 
 #ingrediens_liste       {font-family: 'Inter', sans-serif;
@@ -674,11 +682,13 @@ header  {display:flex;
                 padding: 2vw;}
 
 #ikonerhoejre   {display: flex;
-                margin-left: 10vw;
-                padding: 2vw 0;
+                margin-left: auto; 
+                margin-right: 7vw;
                 text-align: center;
                 width: 10vw;
                 justify-content: space-between;}
+
+.ikoner{width: 2vw;}
 
 
 .filterknap     {background-color: #F3F1ED;
@@ -699,19 +709,27 @@ header  {display:flex;
 
 #madtallerkenbillede    {z-index: 1;
                         width: 20vw;
-                        position: relative;
-                        left: 24vw;
-                        bottom: 30vw;}
+                        position: fixed;
+                        right: 3vw;
+                        top: 13vw;}
 
-/*Styles til måltidskassesiderne + styles til den hurtige*/
+/*Styles til måltidskassesiderne*/
 #maaltidskassebaggrund  {background-color: #f3f1ed;
                         padding: 0 3vw 0 3vw;
                         height: 100vh; /*Så baggrunden kan ses bag headeren*/
                         padding-top: 15vh; /*så content fylder ned under headeren*/}
 
 #hurtigh1       {color: #F8AAB8;
-
                 text-align: right;}
+
+#klaasiskeh1            {color: #2f2418;
+                        text-align: right;}
+
+#økonomiskeh1           {color: #005541;
+                        text-align: right;}
+
+#eksperimenterendeh1            {color: #FF9247;
+                                text-align: right;}
 
 #ugensmenu      {text-align: right;}
 
@@ -772,8 +790,19 @@ button:active     {color:#D51B2F;}
 
 #hurtigmenubaggrund     {background-image: url(billeder/hurtigbaggrund.jpg);
                         background-size: fill;
-                        
                         background-position: right 0vh;}
+
+#klassiskmenubaggrund           {background-image: url(billeder/klassiskbaggrund.jpg);
+                                background-size: fill;
+                                background-position: right 0vh;}
+
+#økonomiskmenubaggrund          {background-image: url(billeder/økonomiskbaggrund.jpg);
+                                background-size: fill;
+                                background-position: right 0vh;}
+
+#eksperimenterendemenubaggrund          {background-image: url(billeder/eksperimenterendebaggrund.jpg);
+                                        background-size: fill;
+                                        background-position: right 0vh;}
 
 .ugensmenukort  {display: flex; /*så dagkortene står på række*/
                 justify-content: space-between;
@@ -812,14 +841,46 @@ button:active     {color:#D51B2F;}
 
 .totalogprpris  {margin-right: 3.5%;}
 
-#tilføjkurvhurtig       {background-color: #F8AAB8;
+#tilføjkurvhurtig1       {background-color: #F8AAB8;
                         text-transform: uppercase;}
 
-#tilføjkurvhurtig:link          {color:#2f2418;}
-#tilføjkurvhurtig:visited       {color:#2f2418;} 
-#tilføjkurvhurtig:hover         {color:#F8AAB8;
+#tilføjkurvhurtig1:link         {color:#2f2418;}
+#tilføjkurvhurtig1:visited      {color:#2f2418;} 
+#tilføjkurvhurtig1:hover        {color:#F8AAB8;
                                 background-color: #2f2418;}  
-#tilføjkurvhurtig:active        {color:#F8AAB8;
+#tilføjkurvhurtig1:active       {color:#F8AAB8;
+                                background-color: #2f2418;}
+
+#tilføjkurvhurtig2              {background-color: #2f2418;
+                                color: #F3F1ED;
+                                text-transform: uppercase;}
+
+#tilføjkurvhurtig2:link         {color:#F3F1ED;}
+#tilføjkurvhurtig2:visited      {color:#F3F1ED;} 
+#tilføjkurvhurtig2:hover        {color:#2f2418;
+                                background-color: #ffffff;}  
+#tilføjkurvhurtig2:active       {color:#2f2418;
+                                background-color: #ffffff;}
+
+#tilføjkurvhurtig3              {background-color: #005541;
+                                color: #F3F1ED;
+                                text-transform: uppercase;}
+
+#tilføjkurvhurtig3:link          {color:#F3F1ED;}
+#tilføjkurvhurtig3:visited       {color:#F3F1ED;} 
+#tilføjkurvhurtig3:hover         {color:#005541;
+                                background-color: #ffffff;}  
+#tilføjkurvhurtig3:active        {color:#005541;
+                                background-color: #ffffff;}
+
+#tilføjkurvhurtig4       {background-color: #FF9247;
+                        text-transform: uppercase;}
+
+#tilføjkurvhurtig4:link          {color:#2f2418;}
+#tilføjkurvhurtig4:visited       {color:#2f2418;} 
+#tilføjkurvhurtig4:hover         {color:#FF9247;
+                                background-color: #2f2418;}  
+#tilføjkurvhurtig4:active        {color:#FF9247;
                                 background-color: #2f2418;}
 
 
@@ -832,216 +893,160 @@ button:active     {color:#D51B2F;}
 
 /*Styles til login siden*/
 
-.formbaggrund{
-        background-color: #f3f1ed;
-        display: flex;
-        height: 100vh; /*så baggrunden kommer op bag headeren*/
-}
+.formbaggrund   {background-color: #f3f1ed;
+                display: flex;
+                height: 100vh; /*så baggrunden kommer op bag headeren*/
+                /*padding-top: 20vh; så content bliver ned under headeren*/}
 
-#loginopretbruger{
-        width: 30vw; /*bredden for opret og login tekst i venstre side*/
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10%;
-        margin-left: 3vw;
-}
+#loginopretbruger       {width: 30vw; /*bredden for opret og login tekst i venstre side*/
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 10%;
+                        margin-left: 8.5vw;}
 
-#opretbruger{
-        opacity: 0.3;
-}
+#login:hover    {color: #2f2418;}
 
-.formhøjreside{
-        display: flex;
-        flex-direction: column; /*så login ikke bliver ødelagt*/
-        justify-content: space-between;
-        align-items: end; /*Styre "formstyles" til højre*/
-        padding: 18vh 0 10vh 15vw;
-       
-}
+#opretbruger    {opacity: 0.3;}
 
-.formstyles {
-        width: 29vw; /*Styre at formlinjerne + login knappen stopper ud fra login i headeren*/
+#opretbruger:hover      {opacity: 100%;}
 
-}
+.formhøjreside  {display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: end; /*Styre "formstyles" til højre*/
+                width: 51vw; /*Styre at formlinjerne + login knappen stopper ud fra login i headeren (på nikos computer:))*/
+                height: 100%;
+                padding: 28vh 0 10vh 15vw;}
 
-#formlogin{
-        padding-top: 14%; /*Padding er anderledes for login, fordi der står mindre i form*/
-}
+.formstyles {width: 100%;/*background-color: yellowgreen;*/}
 
-.formstyles input{
-        border: none;
-        border-bottom: 2px solid #2f2418;
-        background-color: #f3f1ed;
-        line-height: 24pt;
-        font-family: 'Inter', sans-serif; /*Samme styles fra .IRH1*/
-        font-weight: 400;
-        font-size: 1.1vw;
-        color: #2f2418;
-        margin-bottom: 4%;
-        width: 100%;
-}
+#formlogin      {padding-top: 14%; /*Padding er anderledes for login, fordi der står mindre i form*/}
 
-.formstyles input:focus{
-        outline: none;
-}
+.formstyles input       {border: none;
+                        border-bottom: 2px solid #2f2418;
+                        background-color: #f3f1ed;
+                        line-height: 24pt;
+                        font-family: 'Inter', sans-serif; /*Samme styles fra .IRH1*/
+                        font-weight: 400;
+                        font-size: 1.1vw;
+                        color: #2f2418;
+                        margin-bottom: 4%;
+                        width: 100%;}
 
-.formstyles .PFH3{
-        margin-top: 5%; /*afstand fra glemt kodeord op til inputfelterne*/
-}
+.formstyles input:focus {outline: none;}
+
+.formstyles .PFH3       {margin-top: 5%;}
+
 
 /*Styles til personlig information*/
 
-.opretbaggrund{ 
-        background-color: #ffffff;
-        height: 100vh;
-}
+.opretbaggrund  {background-color: #ffffff;
+                height: 100vh;}
 
-.formmedcirkel{ /*den samme som .formhøjreside men har flex-direction row*/
-        display: flex;
-        align-items: end; /*Styre "formstyles" til højre*/
-        width: 51vw; /*Styre at formlinjerne + login knappen stopper ud fra login i headeren (på nikos computer:))*/
-        padding: 18vh 0 10vh 15vw;
-}
+.formmedcirkel  {/*den samme som .formhøjreside men har flex-direction row*/
+                display: flex;
+                align-items: end; /*Styre "formstyles" til højre*/
+                width: 51vw; /*Styre at formlinjerne + login knappen stopper ud fra login i headeren (på nikos computer:))*/
+                margin-top: 25vh}
 
-.formstyles .IEH2{
-        text-align: center;
-        margin-bottom: 5%; /*afstand under Personling info ned til inputfelterne*/
-}
+.formstyles .IEH2       {text-align: center;
+                        margin-bottom: 5%; /*afstand under Personling info ned til inputfelterne*/}
 
-.formudencirkel{
-        height: 100%;
-        display: flex; /*så videre knappen kan rykkes for sig*/
-        flex-direction: column;
-        justify-content: space-between; /*Så længe content ikke fylder 
-        ud over 100vh med padding, vil videre knappen altid være på samme plads nederest */
-        
-}
+.formudencirkel {height: 100%;
+                display: flex; /*så videre knappen kan rykkes for sig*/
+                flex-direction: column;
+                justify-content: space-between; /*Så længe content ikke fylder ud over 100vh med padding, vil videre knappen altid være på samme plads nederest */
+                margin-left: 6vw;}
 
-.formudencirkel a{ /*rykker kun vider knappen*/
-        text-align: right;
-}
+.formudencirkel a       {text-align: right;/*rykker kun vider knappen*/}
 
-#gentagkodeord{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 7%; /*afstand op til de andre inputfelter*/
-}
+#gentagkodeord  {display: flex;
+                justify-content: space-between;
+                margin-top: 7%; /*afstand op til de andre inputfelter*/}
 
-#gentagkodeord div{
-        width: 47%; /*bredden på kodeordsstregerne*/
-}
+#gentagkodeord div      {width: 47%; /*bredden på kodeordsstregerne*/}
 
-#login{
-        opacity: 0.3;
-}
+#stortlogin  {opacity: 0.3;}
 
-.cirkelsteps{
-        height: 65vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 30;
-        position: relative; /*position for cirklerne*/
-        right: 18.5vw;
-        bottom: 6vh;
-}
+#stortlogin:hover       {opacity: 100%;
+                        color: #D51B2F;}
 
-.cirkelfigur{
-        background-color: #f3f1ed;
-        text-align: center;
-        border: solid #2f2418 2px;
-        border-radius: 50%;
-        height: 15vh; /*Skal være det samme som width, så cirklerne bliver kvadratiske runde*/
-        width: 15vh;
-        display: flex; /*så kan man rykke tal og tekst i ciklerne*/
-        flex-direction: column; /*så tal og tekst står underhinanden*/
-        justify-content: center;
-}
+#stortopretbruger:hover       {color: #2f2418;}
 
-#orangecirkel{
-        background-color: #FF9247;
-        border: none;
-}
+.cirkelsteps    {height: 65vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                z-index: 30;
+                position: relative; /*position for cirklerne*/
+                right: 4vw;
+                bottom: 14vh;}
+
+.cirkelfigur    {background-color: #f3f1ed;
+                color: #2f2418;
+                text-align: center;
+                border: solid #2f2418 2px;
+                border-radius: 50%;
+                height: 15vh; /*Skal være det samme som width, så cirklerne bliver kvadratiske runde*/
+                width: 15vh;
+                display: flex; /*så kan man rykke tal og tekst i ciklerne*/
+                flex-direction: column; /*så tal og tekst står underhinanden*/
+                justify-content: center;}
+
+#orangecirkel   {background-color: #FF9247;
+                border: none;}
 
 /*Styles til forsendelse*/
 
 
-#grøncirkel{
-        background-color: #005541;
-        border: none;
-}
+#grøncirkel     {background-color: #005541;
+                border: none;}
 
-#grøncirkel h2{
-        color: #ffffff;
-}
+#grøncirkel h2  {color: #F3F1ED;}
 
-#grøncirkel h3{
-        color: #ffffff;
-}
+#grøncirkel h3  {color: #F3F1ED;}
 
-.tokolonnerinput{
-        display: flex;
-        justify-content: space-between;
-}
+.tokolonnerinput        {display: flex;
+                        justify-content: space-between;}
 
-.tokolonnerinput div{
-        width: 47%; /*bredden på kodeordsstregerne*/
-}
+.tokolonnerinput div    {width: 47%; /*bredden på kodeordsstregerne*/}
 
-.tilbageogvidere {
-        display: flex; /*Så tilbage og videre kommer ned på række*/
-        justify-content: space-between;
-}
+.tilbageogvidere        {display: flex; /*Så tilbage og videre kommer ned på række*/
+                        justify-content: space-between;}
 
-#nytnavn{
-        display: none; /*så default er "samme leveringsadresse" uden navn*/
-}
+#knap     {margin-bottom: 7vh;}
 
-.checkbokse{
-        padding: 5% 0;
-}
+#nytnavn        {display: none; /*så default er "samme leveringsadresse" uden navn*/}
 
-.vmcheckbokse{
-        text-align: left;
-        color: #2f2418;
-        font-family: 'Inter', sans-serif;
-        display: flex;
-        flex-direction: row;
-}
+.checkbokse     {padding: 5% 0;}
 
-.vmcheckbokse input{
-        width: 15%;
-}
+.vmcheckbokse   {text-align: left;
+                color: #2f2418;
+                font-family: 'Inter', sans-serif;
+                display: flex;
+                flex-direction: row;}
 
-.tilbageogvidere a:first-child h1{ /*Tilbage forbliver grå*/
-        opacity: 0.3;
-}
+.vmcheckbokse input     {width: 15%;}
+
+
+
+.tilbageogvidere:hover  {color: #D51B2F;}
 
 /*Styles til betaling*/
 
-#pinkcirkel{
-        background-color: #f8aaf8;
-        border: none;
-}
+#pinkcirkel     {background-color: #F8AAB8;
+                border: none;}
 
-#mobilepayinfo{
-        width: 100%;
-        display: none;
-}
+#mobilepayinfo  {width: 33.6vw;
+                display: none;}
 
 /*Styles til bekræftelse*/
 
-#bruncirkel{
-        background-color: #2f2418;
-        border: none;
-}
+#bruncirkel     {background-color: #2f2418;
+                border: none;}
 
-#bruncirkel h2{
-        color: #ffffff;
-}
+#bruncirkel h2  {color: #ffffff;}
 
-#bruncirkel h3{
-        color: #ffffff;
-}
+#bruncirkel h3  {color: #ffffff;}
