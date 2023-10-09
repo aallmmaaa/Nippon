@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beklager...</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scipts.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet"> 
+
+</head>
+
+
+<body>
+    
+    <header>
+
+        <a href="index.html"><img id="logo" src="billeder/Logo nippon.svg" alt="Logo for Nippon"></a>
+
+        <nav id="menu">
+
+            <a href="index.html#scroll2">Måltidskasser</a>
+            <a href="omos.html">Om os</a>
+            <a id="on-site" href="404sidefaq.html">FAQ</a>
+            <a href="404sidekogebog.html">Kogebogen</a>
+
+        </nav>
+
+        <nav id="login_kurv">
+
+            <a class="login" href="login.html">Log in</a>
+            
+            <img id="kurv" src="billeder/ikoner/kurv ikon.png" alt="Kurv ikon">
+            <a href="kurv.html"><img id="rødkurv" src="billeder/ikoner/kurv rød.png" alt="Kurv ikon"></a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <div id="fejlside">
+            <p class="IEH1" id="beklager">
+                Beklager... <br>
+                Denne side er ikke færdigbagt :(
+            </p>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
