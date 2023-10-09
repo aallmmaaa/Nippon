@@ -23,16 +23,16 @@
 
         <nav id="menu">
 
-            <a href="#">Måltidskasser</a>
-            <a href="#">Om os</a>
-            <a href="#">FAQ</a>
-            <a href="#">Kogebogen</a>
+            <a href="index.html#måltidskasse-oversigt">Måltidskasser</a>
+            <a href="omos.html">Om os</a>
+            <a href="404side.html">FAQ</a>
+            <a href="404side.html">Kogebogen</a>
 
         </nav>
 
         <nav id="login_kurv">
 
-            <a href="#">Log in</a>
+            <a href="login.html">Log in</a>
             <a href="#"><img id="kurv" src="billeder/kurv ikon.png" alt="Kurv ikon"></a>
 
         </nav>
@@ -41,9 +41,93 @@
 
 
     <main>
+        <article class="formbaggrund">
+            <div class="opretbaggrund"> <!--Ny baggrund så den kan få en anden farve end på login siden-->
+                <section id="loginopretbruger">
+                    <a href="personliginfo.html"><h1 class="IEH1">OPRET <br> BRUGER</h1></a>
+                    <a href="login.html" id="login"><h1 class="IEH1">LOG IN</h1></a>
+                </section>
+            </div>
+            <section class="formmedcirkel">
+                
+                <div class="cirkelsteps">
+                    <a href="personliginfo.html">
+                        <div id="orangecirkel" class="cirkelfigur">
+                            <h2 class="IEH2">1</h2>
+                            <h3 class="IRH3">Personlig <br>information</h3>
+                        </div>
+                    </a>
 
+                    <a href="forsendelse.html">
+                        <div id="grøncirkel" class="cirkelfigur">
+                            <h2 class="IEH2">2</h2>
+                            <h3 class="IRH3">Forsendelse</h3>
+                        </div>
+                    </a>
 
-        
+                    <a href="betaling.html">
+                        <div id="pinkcirkel" class="cirkelfigur">
+                            <h2 class="IEH2">3</h2>
+                            <h3 class="IRH3">Betaling</h3>
+                        </div>
+                    </a>
+
+                    <a href="bekræftelse.html">
+                        <div class="cirkelfigur">
+                            <h2 class="IEH2">4</h2>
+                            <h3 class="IRH3">Bekræftelse</h3>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="formudencirkel">
+                    <form class="formstyles">
+                        <h2 class="IEH2">Betaling</h2>
+
+                        <div class="checkbokse">
+                            <label class="vmcheckbokse"> <!--Virkelig vigtigt at name og value er sat!!-->
+                                <input type="radio" checked="checked" value="show" name="radiobutton" onclick="checkMobilepay(1)">
+                                Kortbetaling</label>
+                            
+                            <label class="vmcheckbokse" >
+                                <input type="radio" id="mobilepaym" value="hide" name="radiobutton" onclick="checkMobilepay(2)">
+                                Mobilepay</label>
+                        </div>
+                        
+                        <div id="kortinfo">
+                            <label><h1 class="IRH1">KORTHOLDERS NAVN</h1></label>
+                            <input type="text" placeholder="Anton Jensen">
+                            <label><h1 class="IRH1">KORTNUMMER</h1></label>
+                            <input type="text" placeholder="1234567890123456">
+
+                            <div class="tokolonnerinput">
+                                <div>
+                                    <label><h1 class="IRH1">UDLØBSDATO.</h1></label>
+                                    <input type="text" placeholder="12/24">
+                                </div>
+                                <div>
+                                    <label><h1 class="IRH1">CVV KODEORD</h1></label>
+                                    <input type="text" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="mobilepayinfo">
+                            <label><h1 class="IRH1">MOBILNUMMER</h1></label>
+                            <input type="text" placeholder="12345678">
+                        </div>
+
+                    </form>
+                    
+                    <div class="tilbageogvidere">
+                        <a href="forsendelse.html"><h1 class="PFH1">&#60; Tilbage </h1></a>
+                        <a href="bekræftelse.html"><h1 class="PFH1">Videre ></h1></a>
+                    </div>
+                </div>
+                
+            </section>
+        </article>
+
     </main>
 
 </body>

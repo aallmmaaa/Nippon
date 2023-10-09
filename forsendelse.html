@@ -23,16 +23,16 @@
 
         <nav id="menu">
 
-            <a href="#">Måltidskasser</a>
-            <a href="#">Om os</a>
-            <a href="#">FAQ</a>
-            <a href="#">Kogebogen</a>
+            <a href="index.html#måltidskasse-oversigt">Måltidskasser</a>
+            <a href="omos.html">Om os</a>
+            <a href="404side.html">FAQ</a>
+            <a href="404side.html">Kogebogen</a>
 
         </nav>
 
         <nav id="login_kurv">
 
-            <a href="#">Log in</a>
+            <a href="login.html">Log in</a>
             <a href="#"><img id="kurv" src="billeder/kurv ikon.png" alt="Kurv ikon"></a>
 
         </nav>
@@ -41,9 +41,88 @@
 
 
     <main>
+        <article class="formbaggrund">
+            <div class="opretbaggrund"> <!--Ny baggrund så den kan få en anden farve end på login siden-->
+                <section id="loginopretbruger">
+                    <a href="personliginfo.html"><h1 class="IEH1">OPRET <br> BRUGER</h1></a>
+                    <a href="login.html" id="login"><h1 class="IEH1">LOG IN</h1></a>
+                </section>
+            </div>
+            <section class="formmedcirkel">
+                
+                <div class="cirkelsteps">
+                    <a href="personliginfo.html">
+                        <div id="orangecirkel" class="cirkelfigur">
+                            <h2 class="IEH2">1</h2>
+                            <h3 class="IRH3">Personlig <br>information</h3>
+                        </div>
+                    </a>
 
+                    <a href="forsendelse.html">
+                        <div id="grøncirkel" class="cirkelfigur">
+                            <h2 class="IEH2">2</h2>
+                            <h3 class="IRH3">Forsendelse</h3>
+                        </div>
+                    </a>
 
-        
+                    <a href="betaling.html">
+                        <div class="cirkelfigur">
+                            <h2 class="IEH2">3</h2>
+                            <h3 class="IRH3">Betaling</h3>
+                        </div>
+                    </a>
+
+                    <a href="bekræftelse.html">
+                        <div class="cirkelfigur">
+                            <h2 class="IEH2">4</h2>
+                            <h3 class="IRH3">Bekræftelse</h3>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="formudencirkel">
+                    <form class="formstyles">
+                        <h2 class="IEH2">Forsendelse</h2>
+
+                        <div class="checkbokse">
+                            <label class="vmcheckbokse"> <!--Virkelig vigtigt at name og value er sat!!-->
+                                <input type="radio" id="sammeforsendelse" checked value="hide" name="radiobutton" onclick="checkNyForsendelse(1)">
+                                Måltidskasse skal leveres til fakturerings adresse</label>
+                            
+                            <label class="vmcheckbokse" >
+                                <input type="radio" id="nyforsendelse" value="show" name="radiobutton" onclick="checkNyForsendelse(2)">
+                                Måltidskasse skal ikke leveres til samme adresse</label>
+                        </div>
+
+                        <div id="nytnavn">
+                            <label><h1 class="IRH1">NAVN</h1></label>
+                            <input type="text" placeholder="Anton Jensen">
+                        </div>
+                        <label><h1 class="IRH1">ADRESSE</h1></label>
+                        <input type="email" placeholder="antonjensenvej 35">
+
+                        <div class="tokolonnerinput">
+                            <div>
+                                <label><h1 class="IRH1">POSTNR.</h1></label>
+                                <input type="text" placeholder="8000">
+                            </div>
+                            <div>
+                                <label><h1 class="IRH1">BY</h1></label>
+                                <input type="text" placeholder="Aarhus C">
+                            </div>
+                        </div>
+
+                    </form>
+                    
+                    <div class="tilbageogvidere">
+                        <a href="personliginfo.html"><h1 class="PFH1">&#60; Tilbage </h1></a>
+                        <a href="betaling.html"><h1 class="PFH1">Videre ></h1></a>
+                    </div>
+                </div>
+                
+            </section>
+        </article>
+
     </main>
 
 </body>

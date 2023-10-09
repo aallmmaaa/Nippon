@@ -23,16 +23,16 @@
 
         <nav id="menu">
 
-            <a href="#">Måltidskasser</a>
-            <a href="#">Om os</a>
-            <a href="#">FAQ</a>
-            <a href="#">Kogebogen</a>
+            <a href="index.html#måltidskasse-oversigt">Måltidskasser</a>
+            <a href="omos.html">Om os</a>
+            <a href="404side.html">FAQ</a>
+            <a href="404side.html">Kogebogen</a>
 
         </nav>
 
         <nav id="login_kurv">
 
-            <a href="#">Log in</a>
+            <a href="login.html">Log in</a>
             <a href="#"><img id="kurv" src="billeder/kurv ikon.png" alt="Kurv ikon"></a>
 
         </nav>
@@ -42,59 +42,70 @@
 
     <main>
         <article class="formbaggrund">
-            <div class="opretbaggrund">
+            <div class="opretbaggrund"> <!--Ny baggrund så den kan få en anden farve end på login siden-->
                 <section id="loginopretbruger">
                     <a href="personliginfo.html"><h1 class="IEH1">OPRET <br> BRUGER</h1></a>
                     <a href="login.html" id="login"><h1 class="IEH1">LOG IN</h1></a>
                 </section>
             </div>
-            <section class="formhøjreside">
-                <!--
+            <section class="formmedcirkel">
+                
                 <div class="cirkelsteps">
-                    <div id="orangecirkel" class="cirkelfigur">
-                        <h2 class="IEH2">1</h2>
-                        <h3 class="IRH3">Personlig <br>information</h3>
-                    </div>
-                    <div class="cirkelfigur">
-                        <h2 class="IEH2">2</h2>
-                        <h3 class="IRH3">Forsendelse</h3>
-                    </div>
-                    <div class="cirkelfigur">
-                        <h2 class="IEH2">3</h2>
-                        <h3 class="IRH3">Betaling</h3>
-                    </div>
-                    <div class="cirkelfigur">
-                        <h2 class="IEH2">4</h2>
-                        <h3 class="IRH3">Bekræftelse</h3>
-                    </div>
+                    <a href="personliginfo.html">
+                        <div id="orangecirkel" class="cirkelfigur">
+                            <h2 class="IEH2">1</h2>
+                            <h3 class="IRH3">Personlig <br>information</h3>
+                        </div>
+                    </a>
+
+                    <a href="forsendelse.html">
+                        <div class="cirkelfigur">
+                            <h2 class="IEH2">2</h2>
+                            <h3 class="IRH3">Forsendelse</h3>
+                        </div>
+                    </a>
+
+                    <a href="betaling.html">
+                        <div class="cirkelfigur">
+                            <h2 class="IEH2">3</h2>
+                            <h3 class="IRH3">Betaling</h3>
+                        </div>
+                    </a>
+
+                    <a href="bekræftelse.html">
+                        <div class="cirkelfigur">
+                            <h2 class="IEH2">4</h2>
+                            <h3 class="IRH3">Bekræftelse</h3>
+                        </div>
+                    </a>
                 </div>
-                -->
                 
-                <form class="formstyles">
-                    <h2 class="IEH2">Personlig information</h2>
-                    <label><h1 class="IRH1">NAVN</h1></label>
-                    <input type="text" placeholder="Anton Jensen">
-                    <label><h1 class="IRH1">EMAIL</h1></label>
-                    <input type="email" placeholder="antonjensen@gmail.com">
-                    <label><h1 class="IRH1">TELEFONNUMMER</h1></label>
-                    <input type="number" placeholder="87654321">
+                <div class="formudencirkel">
+                    <form class="formstyles">
+                        <h2 class="IEH2">Personlig information</h2>
+                        <label><h1 class="IRH1">NAVN</h1></label>
+                        <input type="text" placeholder="Anton Jensen">
+                        <label><h1 class="IRH1">EMAIL</h1></label>
+                        <input type="email" placeholder="antonjensen@gmail.com">
+                        <label><h1 class="IRH1">TELEFONNUMMER</h1></label>
+                        <input type="tel" placeholder="87654321">
 
-                    <div class="gentagkodeord">
-                        <div>
-                            <label><h1 class="IRH1">KODEORD</h1></label>
-                            <input type="password" minlength="8" placeholder="Mindst 8 tegn">
+                        <div id="gentagkodeord">
+                            <div>
+                                <label><h1 class="IRH1">KODEORD</h1></label>
+                                <input type="password" minlength="8" placeholder="Mindst 8 tegn">
+                            </div>
+                            <div>
+                                <label><h1 class="IRH1">GENTAG KODEORD</h1></label>
+                                <input type="password" minlength="8" placeholder="Mindst 8 tegn">
+                            </div>
                         </div>
-                        <div>
-                            <label><h1 class="IRH1">GENTAG KODEORD</h1></label>
-                            <input type="password" minlength="8" placeholder="Mindst 8 tegn">
-                        </div>
-                    </div>
 
-                </form>
-
-                <a href="profilside.html"><h1 class="PFH1">Videre ></h1></a>
+                    </form>
                 
-
+                    <a href="forsendelse.html"><h1 class="PFH1">Videre ></h1></a>
+                </div>
+                
             </section>
         </article>
 
