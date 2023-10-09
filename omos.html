@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om os</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scipts.js" defer></script>
+    <script src="scipt.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,16 +23,16 @@
 
         <nav id="menu">
 
-            <a href="index.html#måltidskasserne">Måltidskasser</a>
-            <a href="omos.html">Om os</a>
-            <a href="404side.html">FAQ</a>
-            <a href="404side.html">Kogebogen</a>
+            <a href="index.html#scroll2">Måltidskasser</a>
+            <a id="on-site" href="omos.html">Om os</a>
+            <a href="404sidefaq.html">FAQ</a>
+            <a href="404sidekogebog.html">Kogebogen</a>
 
         </nav>
 
         <nav id="login_kurv">
 
-            <a id="login" href="login.html">Log in</a>
+            <a class="login" href="login.html">Log in</a>
             
             <img id="kurv" src="billeder/ikoner/kurv ikon.png" alt="Kurv ikon">
             <a href="kurv.html"><img id="rødkurv" src="billeder/ikoner/kurv rød.png" alt="Kurv ikon"></a>
@@ -46,7 +46,7 @@
 
         <div id="omosside">
 
-            <div id="kontaktkort">
+            <div class="kontaktkort" id="kontakt1">
 
                 <h1 class="IRH1">Skriv til os på mail</h1>
                 <h2 class="IEH2">hello@nippon.dk</h2> <br>
@@ -54,67 +54,100 @@
                 <h1 class="IRH1">Eller ring til os på</h1>
                 <h2 class="IEH2">+45 28 27 42 00</h2> <br>
 
-                <h2 id="imidten" class="IEH2">KONTAKT</h2> <br>
+                <h2 id="omostitel" class="IEH2">KONTAKT</h2> <br><br>
 
                 <h1 id="tilhøjre" class="IRH1">Mød os på</h1>
-                <h2 id="tilhøjre" class="IEH2">Sønderhøjallé 30 <br> 8000 Aarhus C </h2>  <br>
+                <h2 id="tilhøjre" class="IEH2">Sønderhøjallé 30 <br> 8000 Aarhus C </h2>  <br><br><br><br>
                 
-                <h1 class="IRH1">Følg med på vores rejse</h1>
+                <h1 class="IRH1">Følg med på vores rejse</h1><br>
                 
-                <div>
-                    <img class="ikon" src="billeder/ikoner/facebook hvid.png" alt="Facebook ikon">
-                    <img class="ikon" src="billeder/ikoner/facebook hvid.png" alt="Facebook ikon">
-                    <img class="ikon" src="billeder/ikoner/facebook hvid.png" alt="Facebook ikon">
+                <div id="socialeikoner">
+                    <img class="konceptikon" src="billeder/ikoner/facebook hvid.png" alt="Facebook ikon">
+                    <img class="konceptikon" src="billeder/ikoner/instagram hvid.png" alt="Facebook ikon">
+                    <img class="konceptikon" src="billeder/ikoner/tiktok hvid.png" alt="Facebook ikon">
                 </div>
 
             </div>
 
-            <div id="historiekort">
+            <div class="kontaktkort" id="kontakt2">
 
-                <img src="billeder/hurtigbillede.jpg" alt="">
-                <h2 id="imidten" class="IEH2">HISTORIE</h2>
-                <p class="IRH1"> I 1972 rejste forsanger fra The Animals Eric Burdon første gang til Japan. I mødet med den japanske madkultur opdagede Eric helt nye sider af sig selv og sit forhold til mad. Han forelskede sig i råvarerne og den japanske tilgang til et måltid. 
-                   <br> <br> Nippon blev etableret i Aarhus i 2023 og forsætter med at viderebringe Erics drøm om en japansk livstil, der starter i køkkenet.  </p>
+                <h1 class="IRH1">Skriv til os på mail</h1>
+                <h2 class="IEH2">hello@nippon.dk</h2> <br>
+            
+                <h1 class="IRH1">Eller ring til os på</h1>
+                <h2 class="IEH2">+45 28 27 42 00</h2> <br>
+
+                <h2 class="IEH2">KONTAKT</h2> <br><br>
+
+                <h1 id="tilhøjre" class="IRH1">Mød os på</h1>
+                <h2 id="tilhøjre" class="IEH2">Sønderhøjallé 30 <br> 8000 Aarhus C </h2>  <br><br><br><br>
+                
+                <h1 class="IRH1">Følg med på vores rejse</h1><br>
+                
+                <div id="socialeikoner2">
+                    <img class="konceptikon" src="billeder/ikoner/facebook hvid.png" alt="Facebook ikon">
+                    <img class="konceptikon" src="billeder/ikoner/instagram hvid.png" alt="Facebook ikon">
+                    <img class="konceptikon" src="billeder/ikoner/tiktok hvid.png" alt="Facebook ikon">
+                </div>
 
             </div>
 
-            <div id="konceptkort">
+            <div class="historiekort" id="historie1">
+
+                <img id="historieimg1" src="billeder/eric.jpg" alt="Billede af Nippons skaber"><br><br>
+                <h2 id="omostitel" class="IEH2">HISTORIE</h2>
+                <p id="historietekst" class="IRH1"> I 1972 rejste forsanger fra The Animals Eric Burdon første gang til Japan. I mødet med den japanske madkultur opdagede Eric helt nye sider af sig selv og sit forhold til mad. Han forelskede sig i råvarerne og den japanske tilgang til et måltid. 
+                   <br> <br> Nippon blev etableret i Aarhus i 2023 for at bringe det japanske køkken ind i danskernes hverdag. </p>
+
+            </div>
+
+            <div class="historiekort" id="historie2">
+
+                <img src="billeder/eric.jpg" alt="Billede af Nippons skaber"><br><br>
+                <h2 class="IEH2">HISTORIE</h2>
+                <p id="historietekst" class="IRH1"> I 1972 rejste forsanger fra The Animals Eric Burdon første gang til Japan. I mødet med den japanske madkultur opdagede Eric helt nye sider af sig selv og sit forhold til mad. Han forelskede sig i råvarerne og den japanske tilgang til et måltid. 
+                   <br> <br> Nippon blev etableret i Aarhus i 2023 for at bringe det japanske køkken ind i danskernes hverdag. </p>
+
+            </div>
+
+
+            <div class="konceptkort" id="koncept1">
 
                 <p class="IRH1">Nippon vil hjælper <br> klimaet, miljøet og dig!</p>
 
-                <div class="ikoner">
+                <div id="konceptikoner1" class="konceptikoner">
 
-                    <div class="tekstikon">
+                    <div class="konceptikontekst">
 
-                        <img class="ikon" src="billeder/ikoner/øko.png" alt="Ikon for 100% økologiske varer">
+                        <img class="konceptikon" src="billeder/ikoner/øko.png" alt="Ikon for 100% økologiske varer">
                         <h2 class="IRH2">100% <br> øko varer </h2>
 
                     </div>
 
-                    <div class="tekstikon">
+                    <div class="konceptikontekst">
 
-                        <img class="ikon" src="billeder/ikoner/sol.png" alt="">
+                        <img class="konceptikon" src="billeder/ikoner/sol.png" alt="Ikon for varer i sæson">
                         <h2 class="IRH2">Varer i sæson</h2>
 
                     </div>
 
-                    <div class="tekstikon">
+                    <div class="konceptikontekst">
 
-                        <img class="ikon" src="billeder/ikoner/co2.png" alt="">
+                        <img class="konceptikon" src="billeder/ikoner/co2.png" alt="Ikon for mindre CO₂ i alle led">
                         <h2 class="IRH2">Mindre CO₂ <br> i alle led </h2>
                     
                     </div>
                     
-                    <div class="tekstikon">
+                    <div class="konceptikontekst">
 
-                        <img class="ikon" src="billeder/ikoner/fly.png" alt="">
+                        <img class="konceptikon" src="billeder/ikoner/fly.png" alt="Ikon for No Fly-Policy varer">
                         <h2 class="IRH2">No <br> Fly-Policy</h2>
                     
                     </div>        
                 
-                </div>
+                </div> <br>
 
-                <h2 id="imidten" class="IEH2">KONCEPT</h2>
+                <h2 id="omostitel" class="IEH2">KONCEPT</h2> <br><br>
 
                 <div id="trinene">
 
@@ -122,14 +155,14 @@
 
                         <div class="trin">
 
-                            <button class="konceptknap"><h2 class="IEH2">1</h2></button>
+                            <button id="konceptknap1" class="konceptknap"><h2 class="IEH2">1</h2></button>
                             <p class="IRH2">Gå på opdagelse blandet måltids-kasserne og find den du kunne tænke dig at prøve.</p>
                         
                         </div>
 
                         <div class="trin">
 
-                            <button class="konceptknap"><h2 class="IEH2">2</h2></button>
+                            <button id="konceptknap1" class="konceptknap"><h2 class="IEH2">2</h2></button>
                             <p class="IRH2">Vælg derefter antal personer og antal dage. Tilføj derefter måltidskassen til kurven.</p>
                         
                         </div>
@@ -140,14 +173,94 @@
 
                         <div class="trin">
 
-                            <button class="konceptknap"><h2 class="IEH2">3</h2></button>
+                            <button id="konceptknap1" class="konceptknap"><h2 class="IEH2">3</h2></button>
                             <p class="IRH2">Opret derefter en bruger og tilføj dine oplysninger.</p>
                         
                         </div>
 
                         <div class="trin">
 
-                            <button class="konceptknap"><h2 class="IEH2">4</h2></button>
+                            <button id="konceptknap1" class="konceptknap"><h2 class="IEH2">4</h2></button>
+                            <p class="IRH2">Nu har du bestilt en måltidskasse, som kommer hjem til dig i løber af 3 dag.</p>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="konceptkort" id="koncept2">
+
+                <p class="IRH1">Nippon vil hjælper <br> klimaet, miljøet og dig!</p>
+
+                <div class="konceptikoner">
+
+                    <div class="konceptikontekst">
+
+                        <img class="konceptikon" src="billeder/ikoner/øko.png" alt="Ikon for 100% økologiske varer">
+                        <h2 class="IRH2">100% <br> øko varer </h2>
+
+                    </div>
+
+                    <div class="konceptikontekst">
+
+                        <img class="konceptikon" src="billeder/ikoner/sol.png" alt="Ikon for varer i sæson">
+                        <h2 class="IRH2">Varer i sæson</h2>
+
+                    </div>
+
+                    <div class="konceptikontekst">
+
+                        <img class="konceptikon" src="billeder/ikoner/co2.png" alt="Ikon for mindre CO₂ i alle led">
+                        <h2 class="IRH2">Mindre CO₂ <br> i alle led </h2>
+                    
+                    </div>
+                    
+                    <div class="konceptikontekst">
+
+                        <img class="konceptikon" src="billeder/ikoner/fly.png" alt="Ikon for No Fly-Policy varer">
+                        <h2 class="IRH2">No <br> Fly-Policy</h2>
+                    
+                    </div>        
+                
+                </div> <br>
+
+                <h2 id="omostitel" class="IEH2">KONCEPT</h2> <br><br>
+
+                <div id="trinene">
+
+                    <div class="totrin">
+
+                        <div class="trin">
+
+                            <button id="konceptknap" class="konceptknap"><h2 class="IEH2">1</h2></button>
+                            <p class="IRH2">Gå på opdagelse blandet måltids-kasserne og find den du kunne tænke dig at prøve.</p>
+                        
+                        </div>
+
+                        <div class="trin">
+
+                            <button id="konceptknap" class="konceptknap"><h2 class="IEH2">2</h2></button>
+                            <p class="IRH2">Vælg derefter antal personer og antal dage. Tilføj derefter måltidskassen til kurven.</p>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="totrin">
+
+                        <div class="trin">
+
+                            <button id="konceptknap" class="konceptknap"><h2 class="IEH2">3</h2></button>
+                            <p class="IRH2">Opret derefter en bruger og tilføj dine oplysninger.</p>
+                        
+                        </div>
+
+                        <div class="trin">
+
+                            <button id="konceptknap" class="konceptknap"><h2 class="IEH2">4</h2></button>
                             <p class="IRH2">Nu har du bestilt en måltidskasse, som kommer hjem til dig i løber af 3 dag.</p>
                         
                         </div>
