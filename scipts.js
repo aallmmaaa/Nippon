@@ -12,7 +12,18 @@ function gem(){
     document.getElementById("kurv").style.display = "flex" ;}
 
 
+document.getElementById("profil").addEventListener("mouseenter", visprofil) ;
 
+function visprofil(){
+    document.getElementById("profil").style.display = "none" ;
+    document.getElementById("rødprofil").style.display = "flex" ;}
+
+document.getElementById("rødprofil").addEventListener("mouseleave", gemprofil) ;
+
+function gemprofil(){
+    
+    document.getElementById("rødprofil").style.display = "none" ;
+    document.getElementById("profil").style.display = "flex" ;}
 
 
 document.getElementById("hurtig").addEventListener("mouseenter", vishurtig) ;
@@ -223,13 +234,15 @@ function valgt9() {
     document.getElementById("filterknap6").style.borderColor = "#2f2418" ;
     document.getElementById("filterknap6").style.color = "#2f2418" ;}
 
+document.addEventListener("DOMContentLoaded", () => {
+  const log = console.log,
+    array = [src="billeder/forsideimg1.jpg", src="billeder/forsideimg2.jpg", src="billeder/forsideimg4.jpg", src="billeder/forsideimg5.jpg",src="billeder/forsideimg6.jpg",src="billeder/forsideimg7.jpg"],
+    random = Math.floor(Math.random() * array.length),
+    target = document.getElementById("target");
+  target.src = `${array[random]}`;
+  log(target);
+});
 
-document.getElementById("kontakt1").addEventListener("mouseenter", viskontakt) ;
-
-function viskontakt(){
-    document.getElementById("kontakt2").style.display = "block"
-    document.getElementById("kontakt1").style.display = "none"
-}
 
 /*Funktion til forsendelse/leveringsadresse*/
 function checkNyForsendelse(val){
