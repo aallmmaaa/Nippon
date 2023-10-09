@@ -836,7 +836,6 @@ button:active     {color:#D51B2F;}
         background-color: #f3f1ed;
         display: flex;
         height: 100vh; /*så baggrunden kommer op bag headeren*/
-        /*padding-top: 20vh; så content bliver ned under headeren*/
 }
 
 #loginopretbruger{
@@ -855,18 +854,15 @@ button:active     {color:#D51B2F;}
 
 .formhøjreside{
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /*så login ikke bliver ødelagt*/
         justify-content: space-between;
         align-items: end; /*Styre "formstyles" til højre*/
-        width: 51vw; /*Styre at formlinjerne + login knappen stopper ud fra login i headeren (på nikos computer:))*/
-        height: 100%;
         padding: 18vh 0 10vh 15vw;
        
 }
 
 .formstyles {
-        width: 100%;
-        /*background-color: yellowgreen;*/
+        width: 29vw; /*Styre at formlinjerne + login knappen stopper ud fra login i headeren*/
 
 }
 
@@ -892,5 +888,160 @@ button:active     {color:#D51B2F;}
 }
 
 .formstyles .PFH3{
-        margin-top: 5%;
+        margin-top: 5%; /*afstand fra glemt kodeord op til inputfelterne*/
+}
+
+/*Styles til personlig information*/
+
+.opretbaggrund{ 
+        background-color: #ffffff;
+        height: 100vh;
+}
+
+.formmedcirkel{ /*den samme som .formhøjreside men har flex-direction row*/
+        display: flex;
+        align-items: end; /*Styre "formstyles" til højre*/
+        width: 51vw; /*Styre at formlinjerne + login knappen stopper ud fra login i headeren (på nikos computer:))*/
+        padding: 18vh 0 10vh 15vw;
+}
+
+.formstyles .IEH2{
+        text-align: center;
+        margin-bottom: 5%; /*afstand under Personling info ned til inputfelterne*/
+}
+
+.formudencirkel{
+        height: 100%;
+        display: flex; /*så videre knappen kan rykkes for sig*/
+        flex-direction: column;
+        justify-content: space-between; /*Så længe content ikke fylder 
+        ud over 100vh med padding, vil videre knappen altid være på samme plads nederest */
+        
+}
+
+.formudencirkel a{ /*rykker kun vider knappen*/
+        text-align: right;
+}
+
+#gentagkodeord{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 7%; /*afstand op til de andre inputfelter*/
+}
+
+#gentagkodeord div{
+        width: 47%; /*bredden på kodeordsstregerne*/
+}
+
+#login{
+        opacity: 0.3;
+}
+
+.cirkelsteps{
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 30;
+        position: relative; /*position for cirklerne*/
+        right: 18.5vw;
+        bottom: 6vh;
+}
+
+.cirkelfigur{
+        background-color: #f3f1ed;
+        text-align: center;
+        border: solid #2f2418 2px;
+        border-radius: 50%;
+        height: 15vh; /*Skal være det samme som width, så cirklerne bliver kvadratiske runde*/
+        width: 15vh;
+        display: flex; /*så kan man rykke tal og tekst i ciklerne*/
+        flex-direction: column; /*så tal og tekst står underhinanden*/
+        justify-content: center;
+}
+
+#orangecirkel{
+        background-color: #FF9247;
+        border: none;
+}
+
+/*Styles til forsendelse*/
+
+
+#grøncirkel{
+        background-color: #005541;
+        border: none;
+}
+
+#grøncirkel h2{
+        color: #ffffff;
+}
+
+#grøncirkel h3{
+        color: #ffffff;
+}
+
+.tokolonnerinput{
+        display: flex;
+        justify-content: space-between;
+}
+
+.tokolonnerinput div{
+        width: 47%; /*bredden på kodeordsstregerne*/
+}
+
+.tilbageogvidere {
+        display: flex; /*Så tilbage og videre kommer ned på række*/
+        justify-content: space-between;
+}
+
+#nytnavn{
+        display: none; /*så default er "samme leveringsadresse" uden navn*/
+}
+
+.checkbokse{
+        padding: 5% 0;
+}
+
+.vmcheckbokse{
+        text-align: left;
+        color: #2f2418;
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        flex-direction: row;
+}
+
+.vmcheckbokse input{
+        width: 15%;
+}
+
+.tilbageogvidere a:first-child h1{ /*Tilbage forbliver grå*/
+        opacity: 0.3;
+}
+
+/*Styles til betaling*/
+
+#pinkcirkel{
+        background-color: #f8aaf8;
+        border: none;
+}
+
+#mobilepayinfo{
+        width: 100%;
+        display: none;
+}
+
+/*Styles til bekræftelse*/
+
+#bruncirkel{
+        background-color: #2f2418;
+        border: none;
+}
+
+#bruncirkel h2{
+        color: #ffffff;
+}
+
+#bruncirkel h3{
+        color: #ffffff;
 }
