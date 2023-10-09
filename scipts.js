@@ -230,3 +230,32 @@ function viskontakt(){
     document.getElementById("kontakt2").style.display = "block"
     document.getElementById("kontakt1").style.display = "none"
 }
+
+/*Funktion til forsendelse/leveringsadresse*/
+function checkNyForsendelse(val){
+    const visNytNavn = document.getElementById("nytnavn");
+
+    if(val==1){
+        visNytNavn.style.display="none";
+
+    } if(val==2) {
+        visNytNavn.style.display="block"
+    }
+
+}
+
+/*Funktion til betalingsmetode*/
+function checkMobilepay(val){
+    const mobilepayMulighed = document.getElementById("mobilepaym");
+    const visMobilepayInfo = document.getElementById("mobilepayinfo");
+    const visKortInfo = document.getElementById("kortinfo");
+
+    if(val==1){
+        visMobilepayInfo.style.display="none";
+        visKortInfo.style.display="block"
+
+    } if(val==2) {
+        visMobilepayInfo.style.display="block";
+        visKortInfo.style.display="none"
+    }
+}
