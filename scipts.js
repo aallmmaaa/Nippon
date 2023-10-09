@@ -12,20 +12,6 @@ function gem(){
     document.getElementById("kurv").style.display = "flex" ;}
 
 
-document.getElementById("profil").addEventListener("mouseenter", visprofil) ;
-
-function visprofil(){
-    document.getElementById("profil").style.display = "none" ;
-    document.getElementById("rødprofil").style.display = "flex" ;}
-
-document.getElementById("rødprofil").addEventListener("mouseleave", gemprofil) ;
-
-function gemprofil(){
-    
-    document.getElementById("rødprofil").style.display = "none" ;
-    document.getElementById("profil").style.display = "flex" ;}
-
-
 document.getElementById("hurtig").addEventListener("mouseenter", vishurtig) ;
 
 function vishurtig(){
