@@ -245,7 +245,6 @@ function checkNyForsendelse(val){
 
 /*Funktion til betalingsmetode*/
 function checkMobilepay(val){
-    const mobilepayMulighed = document.getElementById("mobilepaym");
     const visMobilepayInfo = document.getElementById("mobilepayinfo");
     const visKortInfo = document.getElementById("kortinfo");
 
